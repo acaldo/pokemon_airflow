@@ -1,76 +1,25 @@
-""" from airflow.decorators import dag, task
-from datetime import datetime """
-import requests
-import json
+from airflow.decorators import dag, task
+from datetime import datetime
+from airflow.models.baseoperator import chain
 
-
-# API = "https://pokeapi.co/api/v2/pokemon/"
-
-
-""" @dag(
+@dag(
     start_date=datetime(2023, 1, 1),
     schedule=None,
     catchup=False,
     tags=['pokemon']
-) """
-
-
-def pokemosn():
-    pass
-
-
-def extract_pokemon_name():
-    pokemon_name = []
-    limit = 10
-    offset = 0
-    API = "https://pokeapi.co/api/v2/pokemon/" + \
-        '?limit=' + str(limit) + '&offset=' + str(offset)
-    print(API)
-
-    response = requests.get(
-        API)
-    data = json.loads(response.text)
-    for pokemon in data['results']:
-        pokemon_name.append(pokemon['name'])
-    # print(pokemon_name)
-    # return pokemon_name
-    pokemon_full = []
-    for name in pokemon_name:
-        p = get_pokemon_stats(name)
-        pokemon_full.append(p)
-
-    print(pokemon_full)
-
-
-def get_pokemon_stats(name):
-    API = "https://pokeapi.co/api/v2/pokemon/" + \
-        name
-    response = requests.get(
-        API)
-    data = json.loads(response.text)
-
-    order = data['order']
-    pokemon = data['name']
-    type1 = data['types'][0]['type']['name']
-    if len(data['types']) > 1:
-        type2 = data['types'][1]['type']['name']
-    else:
-        type2 = None
-
-    pokemonDTO = {
-        'id': order,
-        'name': pokemon,
-        'type1': type1,
-        'type2': type2
-
-    }
-    # json dump
-    return pokemonDTO
-    # print(pokemonDTO)
-    # print(json.dumps(response, indent=4))
-
-
-if __name__ == "__main__":
+)
+def pokemon():
+    @task.external_python(python='/usr/local/airflow/poke_venv/bin/python',multiple_outputs=True)
+    def extract_pokemon_name():
+        import asyncio
+        from include.extract import check
+        limit = 1000
+        offset = 0
+        url = f"https://pokeapi.co/api/v2/pokemon/?limit={limit}&offset={offset}"
+        data = asyncio.run(check(limit, offset, url))
+        #return data
+        data.to_csv('include/dataset/pokemon.csv',index=False)
+    
     extract_pokemon_name()
 
-    # get_pokemon_stats('ditto')
+pokemon()
