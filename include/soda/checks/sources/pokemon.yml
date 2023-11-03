@@ -1,0 +1,17 @@
+checks for pokemon:
+  - schema:
+      fail:
+        when required column missing: [id, name, type1, type2, weight, height, hp, attack, defense, sp_atk, sp_def, speed]
+        when wrong column type:
+          id: integer
+          name: string
+          type1: string
+          type2: string
+          weight: integer
+          height: integer
+          hp: integer
+          attack: integer
+          defense: integer
+          sp_atk: integer
+          sp_def: integer
+          speed: integer

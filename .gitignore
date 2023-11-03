@@ -12,3 +12,4 @@ airflow.db
 pokemon_api
 service_account.json
 *.csv
+configuration.yml

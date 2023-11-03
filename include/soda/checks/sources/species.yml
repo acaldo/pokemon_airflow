@@ -1,0 +1,15 @@
+checks for species:
+  - schema:
+      fail:
+        when required column missing: [id, name, gender_rate, base_happiness, is_baby, is_legendary, is_mythical,hatch_counter,has_gender_differences,forms_switchable]
+        when wrong column type:
+          id: integer
+          name: string
+          gender_rate: integer
+          base_happiness: float64
+          is_baby: bool
+          is_legendary: bool
+          is_mythical: bool
+          hatch_counter: float64
+          has_gender_differences: bool
+          forms_switchable: bool
