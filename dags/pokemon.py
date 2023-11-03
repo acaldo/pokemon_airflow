@@ -90,6 +90,12 @@ def pokemon():
         ),
         use_native_support=False,
     )
+
+    @task.external_python(python='/usr/local/airflow/soda_venv/bin/python')
+    def check_load(scan_name='check_load', checks_subpath='sources'):
+        from include.soda.check_function import check
+
+        return check(scan_name, checks_subpath)
         
 
     chain(
@@ -102,6 +108,7 @@ def pokemon():
         [gcs_to_raw,
         gcs_to_raw1
         ],
+        check_load()
     )
 
 pokemon()
