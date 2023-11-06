@@ -22,7 +22,7 @@ def pokemon():
     def extract_pokemon_name():
         import asyncio
         from include.extract import pokemon_full,get_pokemon_stats
-        limit = 1000
+        limit = 20
         offset = 0
         function = get_pokemon_stats
         url = f"https://pokeapi.co/api/v2/pokemon/?limit={limit}&offset={offset}"

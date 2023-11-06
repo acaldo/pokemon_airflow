@@ -11,5 +11,5 @@ airflow.cfg
 airflow.db
 pokemon_api
 service_account.json
-*.csv
+dataset/
 configuration.yml
