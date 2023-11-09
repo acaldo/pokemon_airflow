@@ -1,3 +1,7 @@
+from dataclasses import dataclass
+
+
+@dataclass
 class PokemonSpeciesDTO:
     def __init__(self, id, name, gender_rate, base_happiness, is_baby, is_legendary, is_mythical, hatch_counter, has_gender_differences, forms_switchable):
         self.id = id
