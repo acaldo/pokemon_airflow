@@ -1,0 +1,7 @@
+name: 'pokemon'
+
+profile: 'pokemon'
+
+models:
+  pokemon:
+    materialized: table

@@ -1,0 +1,1331 @@
+[0m06:10:23.995219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8655d60dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86563aaa10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8655f76110>]}
+
+
+============================== 06:10:24.011413 | 279c20a7-f1e8-40a9-b502-f2dc0d30077a ==============================
+[0m06:10:24.011413 [info ] [MainThread]: Running with dbt=1.7.1
+[0m06:10:24.012479 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'log_format': 'default', 'quiet': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'version_check': 'True', 'printer_width': '80', 'profiles_dir': '/usr/local/airflow/include/dbt', 'fail_fast': 'False', 'introspect': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'invocation_command': 'dbt deps', 'no_print': 'None', 'static_parser': 'True', 'debug': 'False', 'use_colors': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'write_json': 'True'}
+[0m06:10:24.204900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '279c20a7-f1e8-40a9-b502-f2dc0d30077a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8655fd9210>]}
+[0m06:10:24.206768 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-z0irgvk8'
+[0m06:10:24.207646 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m06:10:24.941988 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m06:10:24.945426 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m06:10:25.218651 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m06:10:25.240737 [info ] [MainThread]: Updating lock file in file path: /usr/local/airflow/include/dbt/package-lock.yml
+[0m06:10:25.244412 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-0mu8jgq8'
+[0m06:10:25.256707 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m06:10:25.993243 [info ] [MainThread]: Installed from version 1.1.1
+[0m06:10:25.993960 [info ] [MainThread]: Up to date!
+[0m06:10:25.994586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '279c20a7-f1e8-40a9-b502-f2dc0d30077a', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8655f95810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8656948750>]}
+[0m06:10:25.999591 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 2.1180537, "process_user_time": 4.44214, "process_kernel_time": 0.882411, "process_mem_max_rss": "114820", "process_in_blocks": "14384", "process_out_blocks": "2240"}
+[0m06:10:26.000633 [debug] [MainThread]: Command `dbt deps` succeeded at 06:10:26.000383 after 2.12 seconds
+[0m06:10:26.001195 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8656f76b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86562ee890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f865ae23fd0>]}
+[0m06:10:26.001855 [debug] [MainThread]: Flushing usage events
+[0m06:35:07.930373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14b5c79390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14b9016150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14b5c7a590>]}
+
+
+============================== 06:35:07.935500 | 31750942-9b4a-4ad6-b67b-c3093e6c3b84 ==============================
+[0m06:35:07.935500 [info ] [MainThread]: Running with dbt=1.7.1
+[0m06:35:07.936247 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'debug': 'False', 'log_cache_events': 'False', 'warn_error': 'None', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'use_colors': 'True', 'partial_parse': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'log_format': 'default', 'printer_width': '80', 'fail_fast': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'quiet': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'indirect_selection': 'eager'}
+[0m06:35:08.820644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '31750942-9b4a-4ad6-b67b-c3093e6c3b84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14b3f04d90>]}
+[0m06:35:08.936558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '31750942-9b4a-4ad6-b67b-c3093e6c3b84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14b5c81b90>]}
+[0m06:35:08.937899 [info ] [MainThread]: Registered adapter: bigquery=1.7.1
+[0m06:35:08.967313 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m06:35:08.968217 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m06:35:08.968808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '31750942-9b4a-4ad6-b67b-c3093e6c3b84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14b3d4cdd0>]}
+[0m06:35:10.765450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '31750942-9b4a-4ad6-b67b-c3093e6c3b84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14b3a6b510>]}
+[0m06:35:10.782698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '31750942-9b4a-4ad6-b67b-c3093e6c3b84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14b3a97650>]}
+[0m06:35:10.783504 [info ] [MainThread]: Found 1 model, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m06:35:10.784227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '31750942-9b4a-4ad6-b67b-c3093e6c3b84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14b9e022d0>]}
+[0m06:35:10.786449 [info ] [MainThread]: 
+[0m06:35:10.788082 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m06:35:10.789971 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pokemon-403919'
+[0m06:35:10.790709 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:35:11.518236 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pokemon-403919, now list_pokemon-403919_pokemon)
+[0m06:35:11.519451 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m06:35:12.153697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '31750942-9b4a-4ad6-b67b-c3093e6c3b84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14b3db1610>]}
+[0m06:35:12.154861 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m06:35:12.155569 [info ] [MainThread]: 
+[0m06:35:12.165084 [debug] [Thread-1 (]: Began running node model.pokemon.dim_type
+[0m06:35:12.166115 [info ] [Thread-1 (]: 1 of 1 START sql table model pokemon.dim_type .................................. [RUN]
+[0m06:35:12.167399 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pokemon-403919_pokemon, now model.pokemon.dim_type)
+[0m06:35:12.168199 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_type
+[0m06:35:12.180734 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_type"
+[0m06:35:12.183282 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (compile): 06:35:12.168742 => 06:35:12.182810
+[0m06:35:12.183961 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_type
+[0m06:35:12.252255 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_type"
+[0m06:35:12.255911 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:35:12.258539 [debug] [Thread-1 (]: On model.pokemon.dim_type: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_type"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH type_cte AS(
+    SELECT DISTINCT
+        to_hex(md5(cast(coalesce(cast(type1 as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(type2 as string), '_dbt_utils_surrogate_key_null_') as string))) AS dim_type_key,
+        type1 AS primary_type,
+        type2 AS secondary_type
+)
+SELECT *
+FROM type_cte
+    );
+  
+[0m06:35:13.047801 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:US:ecb35cad-3d07-40a1-8920-73a14fa6d0e9&page=queryresults
+[0m06:35:13.049858 [debug] [Thread-1 (]: BigQuery adapter: Unhandled error while running:
+/* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_type"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH type_cte AS(
+    SELECT DISTINCT
+        to_hex(md5(cast(coalesce(cast(type1 as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(type2 as string), '_dbt_utils_surrogate_key_null_') as string))) AS dim_type_key,
+        type1 AS primary_type,
+        type2 AS secondary_type
+)
+SELECT *
+FROM type_cte
+    );
+  
+[0m06:35:13.050671 [debug] [Thread-1 (]: BigQuery adapter: 404 Not found: Dataset pokemon-403919:pokemon was not found in location US
+
+Location: US
+Job ID: ecb35cad-3d07-40a1-8920-73a14fa6d0e9
+
+[0m06:35:13.051525 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (execute): 06:35:12.184399 => 06:35:13.051212
+[0m06:35:13.063496 [debug] [Thread-1 (]: Runtime Error in model dim_type (models/transform/dim_type.sql)
+  404 Not found: Dataset pokemon-403919:pokemon was not found in location US
+  
+  Location: US
+  Job ID: ecb35cad-3d07-40a1-8920-73a14fa6d0e9
+  
+[0m06:35:13.064524 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '31750942-9b4a-4ad6-b67b-c3093e6c3b84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14b3a31bd0>]}
+[0m06:35:13.065953 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model pokemon.dim_type ......................... [[31mERROR[0m in 0.90s]
+[0m06:35:13.069562 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_type
+[0m06:35:13.073877 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m06:35:13.074685 [debug] [MainThread]: Connection 'model.pokemon.dim_type' was properly closed.
+[0m06:35:13.075375 [info ] [MainThread]: 
+[0m06:35:13.076047 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 2.29 seconds (2.29s).
+[0m06:35:13.077172 [debug] [MainThread]: Command end result
+[0m06:35:13.143833 [info ] [MainThread]: 
+[0m06:35:13.144564 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m06:35:13.145091 [info ] [MainThread]: 
+[0m06:35:13.145583 [error] [MainThread]:   Runtime Error in model dim_type (models/transform/dim_type.sql)
+  404 Not found: Dataset pokemon-403919:pokemon was not found in location US
+  
+  Location: US
+  Job ID: ecb35cad-3d07-40a1-8920-73a14fa6d0e9
+  
+[0m06:35:13.146167 [info ] [MainThread]: 
+[0m06:35:13.146737 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m06:35:13.149034 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 5.27415, "process_user_time": 5.708019, "process_kernel_time": 0.767804, "process_mem_max_rss": "158512", "process_in_blocks": "1872", "process_out_blocks": "3416", "command_success": false}
+[0m06:35:13.149844 [debug] [MainThread]: Command `dbt run` failed at 06:35:13.149662 after 5.28 seconds
+[0m06:35:13.150394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14b64bca50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14b60db610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f14b6225f10>]}
+[0m06:35:13.150922 [debug] [MainThread]: Flushing usage events
+[0m06:36:02.775385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f752d2bc710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f75300f5890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f752d2bd610>]}
+
+
+============================== 06:36:02.780185 | 530eeb5f-a029-40b7-a32f-d6ba9546a950 ==============================
+[0m06:36:02.780185 [info ] [MainThread]: Running with dbt=1.7.1
+[0m06:36:02.780952 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'log_format': 'default', 'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'printer_width': '80', 'warn_error': 'None', 'log_cache_events': 'False', 'write_json': 'True', 'debug': 'False', 'indirect_selection': 'eager', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt', 'use_experimental_parser': 'False', 'introspect': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'partial_parse': 'True'}
+[0m06:36:03.447022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '530eeb5f-a029-40b7-a32f-d6ba9546a950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f752bc07b50>]}
+[0m06:36:03.548634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '530eeb5f-a029-40b7-a32f-d6ba9546a950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f752cd1efd0>]}
+[0m06:36:03.549662 [info ] [MainThread]: Registered adapter: bigquery=1.7.1
+[0m06:36:03.569658 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m06:36:03.584827 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m06:36:03.585776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '530eeb5f-a029-40b7-a32f-d6ba9546a950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f752af56810>]}
+[0m06:36:05.229591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '530eeb5f-a029-40b7-a32f-d6ba9546a950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f752ab3bbd0>]}
+[0m06:36:05.245242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '530eeb5f-a029-40b7-a32f-d6ba9546a950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f752acd4850>]}
+[0m06:36:05.245944 [info ] [MainThread]: Found 1 model, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m06:36:05.246452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '530eeb5f-a029-40b7-a32f-d6ba9546a950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f752ae513d0>]}
+[0m06:36:05.248121 [info ] [MainThread]: 
+[0m06:36:05.249264 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m06:36:05.250934 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pokemon-403919'
+[0m06:36:05.251638 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:36:05.886156 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pokemon-403919, now list_pokemon-403919_pokemon)
+[0m06:36:05.887396 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m06:36:06.511236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '530eeb5f-a029-40b7-a32f-d6ba9546a950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f752abdabd0>]}
+[0m06:36:06.512682 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m06:36:06.513541 [info ] [MainThread]: 
+[0m06:36:06.524764 [debug] [Thread-1 (]: Began running node model.pokemon.dim_type
+[0m06:36:06.525977 [info ] [Thread-1 (]: 1 of 1 START sql table model pokemon.dim_type .................................. [RUN]
+[0m06:36:06.527482 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pokemon-403919_pokemon, now model.pokemon.dim_type)
+[0m06:36:06.528329 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_type
+[0m06:36:06.543235 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_type"
+[0m06:36:06.544980 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (compile): 06:36:06.528840 => 06:36:06.544210
+[0m06:36:06.546055 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_type
+[0m06:36:06.609667 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_type"
+[0m06:36:06.610790 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:36:06.612948 [debug] [Thread-1 (]: On model.pokemon.dim_type: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_type"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH type_cte AS(
+    SELECT DISTINCT
+        to_hex(md5(cast(coalesce(cast(type1 as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(type2 as string), '_dbt_utils_surrogate_key_null_') as string))) AS dim_type_key,
+        type1 AS primary_type,
+        type2 AS secondary_type
+)
+SELECT *
+FROM type_cte
+    );
+  
+[0m06:36:07.367729 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:bf0fa83e-b4e1-4b17-b2a8-72f67e5939c9&page=queryresults
+[0m06:36:07.778240 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Query without FROM clause cannot use SELECT DISTINCT at [14:5]')
+[0m06:36:08.302759 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:702c4562-8c42-4052-b996-e429de49a517&page=queryresults
+[0m06:36:08.700560 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:702c4562-8c42-4052-b996-e429de49a517&page=queryresults
+[0m06:36:08.701912 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (execute): 06:36:06.546585 => 06:36:08.701538
+[0m06:36:08.708498 [debug] [Thread-1 (]: Database Error in model dim_type (models/transform/dim_type.sql)
+  Query without FROM clause cannot use SELECT DISTINCT at [14:5]
+  compiled Code at target/run/pokemon/models/transform/dim_type.sql
+[0m06:36:08.709909 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '530eeb5f-a029-40b7-a32f-d6ba9546a950', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f752ab248d0>]}
+[0m06:36:08.713248 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model pokemon.dim_type ......................... [[31mERROR[0m in 2.18s]
+[0m06:36:08.715239 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_type
+[0m06:36:08.718510 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m06:36:08.719156 [debug] [MainThread]: Connection 'model.pokemon.dim_type' was properly closed.
+[0m06:36:08.719754 [info ] [MainThread]: 
+[0m06:36:08.720865 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 3.47 seconds (3.47s).
+[0m06:36:08.722267 [debug] [MainThread]: Command end result
+[0m06:36:08.735671 [info ] [MainThread]: 
+[0m06:36:08.736407 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m06:36:08.736898 [info ] [MainThread]: 
+[0m06:36:08.737411 [error] [MainThread]:   Database Error in model dim_type (models/transform/dim_type.sql)
+  Query without FROM clause cannot use SELECT DISTINCT at [14:5]
+  compiled Code at target/run/pokemon/models/transform/dim_type.sql
+[0m06:36:08.737906 [info ] [MainThread]: 
+[0m06:36:08.738580 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m06:36:08.740132 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 6.011683, "process_user_time": 5.175219, "process_kernel_time": 0.221939, "process_mem_max_rss": "158740", "process_out_blocks": "3408", "command_success": false, "process_in_blocks": "0"}
+[0m06:36:08.741150 [debug] [MainThread]: Command `dbt run` failed at 06:36:08.740899 after 6.01 seconds
+[0m06:36:08.742014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f752cd32f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f752d2bc210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7531e80890>]}
+[0m06:36:08.742741 [debug] [MainThread]: Flushing usage events
+[0m06:37:10.339137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa748e64750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7499db110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa74912add0>]}
+
+
+============================== 06:37:10.344055 | f603d9a1-23ba-4012-9904-be0eed39af9c ==============================
+[0m06:37:10.344055 [info ] [MainThread]: Running with dbt=1.7.1
+[0m06:37:10.344799 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'write_json': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'version_check': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt', 'static_parser': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'printer_width': '80', 'log_cache_events': 'False', 'no_print': 'None', 'fail_fast': 'False', 'quiet': 'False', 'partial_parse': 'True', 'debug': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'target_path': 'None', 'introspect': 'True'}
+[0m06:37:11.007857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f603d9a1-23ba-4012-9904-be0eed39af9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa74709d050>]}
+[0m06:37:11.109896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f603d9a1-23ba-4012-9904-be0eed39af9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa748c88350>]}
+[0m06:37:11.110931 [info ] [MainThread]: Registered adapter: bigquery=1.7.1
+[0m06:37:11.130937 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m06:37:11.170408 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m06:37:11.171230 [debug] [MainThread]: Partial parsing: updated file: pokemon://models/transform/dim_type.sql
+[0m06:37:11.358260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f603d9a1-23ba-4012-9904-be0eed39af9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa746ee8c10>]}
+[0m06:37:11.382377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f603d9a1-23ba-4012-9904-be0eed39af9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa746b95210>]}
+[0m06:37:11.383166 [info ] [MainThread]: Found 1 model, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m06:37:11.383792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f603d9a1-23ba-4012-9904-be0eed39af9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa74cfca2d0>]}
+[0m06:37:11.386141 [info ] [MainThread]: 
+[0m06:37:11.388385 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m06:37:11.434976 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pokemon-403919'
+[0m06:37:11.435863 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:37:12.055076 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pokemon-403919, now list_pokemon-403919_pokemon)
+[0m06:37:12.056609 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m06:37:12.669495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f603d9a1-23ba-4012-9904-be0eed39af9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa746ff4910>]}
+[0m06:37:12.670740 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m06:37:12.671494 [info ] [MainThread]: 
+[0m06:37:12.680131 [debug] [Thread-1 (]: Began running node model.pokemon.dim_type
+[0m06:37:12.681075 [info ] [Thread-1 (]: 1 of 1 START sql table model pokemon.dim_type .................................. [RUN]
+[0m06:37:12.682259 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pokemon-403919_pokemon, now model.pokemon.dim_type)
+[0m06:37:12.682930 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_type
+[0m06:37:12.699688 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_type"
+[0m06:37:12.700710 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (compile): 06:37:12.683293 => 06:37:12.700392
+[0m06:37:12.701258 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_type
+[0m06:37:12.749471 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_type"
+[0m06:37:12.750627 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:37:12.752915 [debug] [Thread-1 (]: On model.pokemon.dim_type: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_type"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH type_cte AS(
+    SELECT DISTINCT
+        to_hex(md5(cast(coalesce(cast(type1 as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(type2 as string), '_dbt_utils_surrogate_key_null_') as string))) AS dim_type_key,
+        type1 AS primary_type,
+        type2 AS secondary_type
+    FROM `pokemon-403919`.`pokemon`.`pokemon`
+)
+SELECT *
+FROM type_cte
+    );
+  
+[0m06:37:13.502780 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:2e353ca1-2d67-40f0-8a8f-4c29e7291693&page=queryresults
+[0m06:37:15.552581 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (execute): 06:37:12.701584 => 06:37:15.552265
+[0m06:37:15.553740 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f603d9a1-23ba-4012-9904-be0eed39af9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa746c64410>]}
+[0m06:37:15.554603 [info ] [Thread-1 (]: 1 of 1 OK created sql table model pokemon.dim_type ............................. [[32mCREATE TABLE (196.0 rows, 10.8 KiB processed)[0m in 2.87s]
+[0m06:37:15.555723 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_type
+[0m06:37:15.559096 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m06:37:15.559787 [debug] [MainThread]: Connection 'model.pokemon.dim_type' was properly closed.
+[0m06:37:15.560302 [info ] [MainThread]: 
+[0m06:37:15.560855 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.17 seconds (4.17s).
+[0m06:37:15.562093 [debug] [MainThread]: Command end result
+[0m06:37:15.717379 [info ] [MainThread]: 
+[0m06:37:15.718190 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m06:37:15.718809 [info ] [MainThread]: 
+[0m06:37:15.719403 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m06:37:15.720708 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.4332724, "process_user_time": 3.840552, "process_kernel_time": 0.302405, "process_mem_max_rss": "157196", "process_out_blocks": "3408", "process_in_blocks": "0"}
+[0m06:37:15.721422 [debug] [MainThread]: Command `dbt run` succeeded at 06:37:15.721223 after 5.43 seconds
+[0m06:37:15.721978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7490b1750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa74ddce190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa74deac110>]}
+[0m06:37:15.723222 [debug] [MainThread]: Flushing usage events
+[0m07:29:33.914074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2ed7500d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2ed767ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2ed3de550>]}
+
+
+============================== 07:29:33.920161 | 058b1f2d-4077-4a36-90f7-d928137f1c2d ==============================
+[0m07:29:33.920161 [info ] [MainThread]: Running with dbt=1.7.1
+[0m07:29:33.920993 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'log_cache_events': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt', 'log_format': 'default', 'cache_selected_only': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'use_experimental_parser': 'False', 'printer_width': '80', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'write_json': 'True', 'target_path': 'None', 'version_check': 'True', 'fail_fast': 'False', 'debug': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/usr/local/airflow/include/dbt', 'static_parser': 'True'}
+[0m07:29:34.677968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '058b1f2d-4077-4a36-90f7-d928137f1c2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2eb297cd0>]}
+[0m07:29:34.774212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '058b1f2d-4077-4a36-90f7-d928137f1c2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2ed1bff50>]}
+[0m07:29:34.775475 [info ] [MainThread]: Registered adapter: bigquery=1.7.1
+[0m07:29:34.793487 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m07:29:34.859961 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m07:29:34.860732 [debug] [MainThread]: Partial parsing: added file: pokemon://models/transform/dim_move.sql
+[0m07:29:35.029878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '058b1f2d-4077-4a36-90f7-d928137f1c2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2eb16bf90>]}
+[0m07:29:35.051988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '058b1f2d-4077-4a36-90f7-d928137f1c2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2eb04f290>]}
+[0m07:29:35.052688 [info ] [MainThread]: Found 2 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m07:29:35.053190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '058b1f2d-4077-4a36-90f7-d928137f1c2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2eb16b7d0>]}
+[0m07:29:35.054828 [info ] [MainThread]: 
+[0m07:29:35.055887 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m07:29:35.057392 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pokemon-403919'
+[0m07:29:35.058005 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:29:35.722619 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pokemon-403919, now list_pokemon-403919_pokemon)
+[0m07:29:35.723349 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m07:29:36.291760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '058b1f2d-4077-4a36-90f7-d928137f1c2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2eb39c1d0>]}
+[0m07:29:36.292857 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m07:29:36.293404 [info ] [MainThread]: 
+[0m07:29:36.301655 [debug] [Thread-1 (]: Began running node model.pokemon.dim_move
+[0m07:29:36.302783 [info ] [Thread-1 (]: 1 of 2 START sql table model pokemon.dim_move .................................. [RUN]
+[0m07:29:36.304367 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pokemon-403919_pokemon, now model.pokemon.dim_move)
+[0m07:29:36.305064 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_move
+[0m07:29:36.319514 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_move"
+[0m07:29:36.321016 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_move (compile): 07:29:36.305473 => 07:29:36.320546
+[0m07:29:36.321781 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_move
+[0m07:29:36.376585 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_move"
+[0m07:29:36.378150 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:29:36.380950 [debug] [Thread-1 (]: On model.pokemon.dim_move: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_move"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_move`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH MovesData AS (
+  SELECT
+    JSON_EXTRACT_ARRAY(moves, '$') AS moves_array
+    FROM `pokemon-403919`.`pokemon`.`pokemon`
+)
+SELECT
+  JSON_EXTRACT_SCALAR(move, '$.move') AS move,
+  JSON_EXTRACT_SCALAR(move, '$.url') AS url,
+  JSON_EXTRACT_SCALAR(move, '$.id') AS id
+FROM
+  MovesData,
+  UNNEST(moves_array) AS move;
+    );
+  
+[0m07:29:37.045238 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:ab585771-052a-4296-a201-517b555fe52a&page=queryresults
+[0m07:29:37.048391 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected ")" but got ";" at [24:30]')
+[0m07:29:37.503751 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:fe9c7112-cd35-4362-8886-27a9ae162a99&page=queryresults
+[0m07:29:37.505445 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:fe9c7112-cd35-4362-8886-27a9ae162a99&page=queryresults
+[0m07:29:37.506913 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_move (execute): 07:29:36.322157 => 07:29:37.506538
+[0m07:29:37.519031 [debug] [Thread-1 (]: Database Error in model dim_move (models/transform/dim_move.sql)
+  Syntax error: Expected ")" but got ";" at [24:30]
+  compiled Code at target/run/pokemon/models/transform/dim_move.sql
+[0m07:29:37.519894 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '058b1f2d-4077-4a36-90f7-d928137f1c2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2ea2ef590>]}
+[0m07:29:37.520735 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model pokemon.dim_move ......................... [[31mERROR[0m in 1.22s]
+[0m07:29:37.522657 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_move
+[0m07:29:37.523816 [debug] [Thread-1 (]: Began running node model.pokemon.dim_type
+[0m07:29:37.524673 [info ] [Thread-1 (]: 2 of 2 START sql table model pokemon.dim_type .................................. [RUN]
+[0m07:29:37.525722 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.pokemon.dim_move, now model.pokemon.dim_type)
+[0m07:29:37.526226 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_type
+[0m07:29:37.671981 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_type"
+[0m07:29:37.673035 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (compile): 07:29:37.526551 => 07:29:37.672727
+[0m07:29:37.673562 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_type
+[0m07:29:37.678376 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_type"
+[0m07:29:37.679544 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:29:37.681707 [debug] [Thread-1 (]: On model.pokemon.dim_type: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_type"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH type_cte AS(
+    SELECT DISTINCT
+        to_hex(md5(cast(coalesce(cast(type1 as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(type2 as string), '_dbt_utils_surrogate_key_null_') as string))) AS dim_type_key,
+        type1 AS primary_type,
+        type2 AS secondary_type
+    FROM `pokemon-403919`.`pokemon`.`pokemon`
+)
+SELECT *
+FROM type_cte
+    );
+  
+[0m07:29:38.451909 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:d912a13e-0934-473d-8116-e907e3f44bca&page=queryresults
+[0m07:29:40.196744 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (execute): 07:29:37.673885 => 07:29:40.196405
+[0m07:29:40.197931 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '058b1f2d-4077-4a36-90f7-d928137f1c2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2eb363d50>]}
+[0m07:29:40.198774 [info ] [Thread-1 (]: 2 of 2 OK created sql table model pokemon.dim_type ............................. [[32mCREATE TABLE (207.0 rows, 12.1 KiB processed)[0m in 2.67s]
+[0m07:29:40.199856 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_type
+[0m07:29:40.202770 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:29:40.203306 [debug] [MainThread]: Connection 'model.pokemon.dim_type' was properly closed.
+[0m07:29:40.203879 [info ] [MainThread]: 
+[0m07:29:40.204759 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 5.15 seconds (5.15s).
+[0m07:29:40.206220 [debug] [MainThread]: Command end result
+[0m07:29:40.220164 [info ] [MainThread]: 
+[0m07:29:40.220855 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m07:29:40.221474 [info ] [MainThread]: 
+[0m07:29:40.222031 [error] [MainThread]:   Database Error in model dim_move (models/transform/dim_move.sql)
+  Syntax error: Expected ")" but got ";" at [24:30]
+  compiled Code at target/run/pokemon/models/transform/dim_move.sql
+[0m07:29:40.222554 [info ] [MainThread]: 
+[0m07:29:40.223265 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[0m07:29:40.224869 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 6.3574142, "process_user_time": 3.927632, "process_kernel_time": 0.701363, "process_mem_max_rss": "158048", "process_out_blocks": "3448", "command_success": false, "process_in_blocks": "0"}
+[0m07:29:40.226008 [debug] [MainThread]: Command `dbt run` failed at 07:29:40.225687 after 6.36 seconds
+[0m07:29:40.226719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2ed740750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2ed19b010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2ed3fdb50>]}
+[0m07:29:40.227448 [debug] [MainThread]: Flushing usage events
+[0m07:30:22.442607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd25d37810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd26306990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd25fb4390>]}
+
+
+============================== 07:30:22.447781 | 77139e15-958b-4b5f-8e78-f04fc3ced6ee ==============================
+[0m07:30:22.447781 [info ] [MainThread]: Running with dbt=1.7.1
+[0m07:30:22.448510 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/usr/local/airflow/include/dbt', 'target_path': 'None', 'log_format': 'default', 'no_print': 'None', 'write_json': 'True', 'cache_selected_only': 'False', 'debug': 'False', 'quiet': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt', 'log_cache_events': 'False', 'fail_fast': 'False', 'warn_error': 'None', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'version_check': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'partial_parse': 'True', 'printer_width': '80'}
+[0m07:30:23.026801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '77139e15-958b-4b5f-8e78-f04fc3ced6ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd23e0e450>]}
+[0m07:30:23.118661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '77139e15-958b-4b5f-8e78-f04fc3ced6ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd25d43f90>]}
+[0m07:30:23.119658 [info ] [MainThread]: Registered adapter: bigquery=1.7.1
+[0m07:30:23.135570 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m07:30:23.171581 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m07:30:23.172395 [debug] [MainThread]: Partial parsing: updated file: pokemon://models/transform/dim_move.sql
+[0m07:30:23.364304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '77139e15-958b-4b5f-8e78-f04fc3ced6ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd23b35e90>]}
+[0m07:30:23.379266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '77139e15-958b-4b5f-8e78-f04fc3ced6ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd22e437d0>]}
+[0m07:30:23.379909 [info ] [MainThread]: Found 2 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m07:30:23.380397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '77139e15-958b-4b5f-8e78-f04fc3ced6ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd23b4c810>]}
+[0m07:30:23.382149 [info ] [MainThread]: 
+[0m07:30:23.383897 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m07:30:23.385825 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pokemon-403919'
+[0m07:30:23.386579 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:30:24.016846 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pokemon-403919_pokemon'
+[0m07:30:24.017804 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:30:24.600183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '77139e15-958b-4b5f-8e78-f04fc3ced6ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd23d45a90>]}
+[0m07:30:24.601352 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m07:30:24.601942 [info ] [MainThread]: 
+[0m07:30:24.609787 [debug] [Thread-1 (]: Began running node model.pokemon.dim_move
+[0m07:30:24.611003 [info ] [Thread-1 (]: 1 of 2 START sql table model pokemon.dim_move .................................. [RUN]
+[0m07:30:24.612621 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pokemon-403919_pokemon, now model.pokemon.dim_move)
+[0m07:30:24.613371 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_move
+[0m07:30:24.623622 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_move"
+[0m07:30:24.624578 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_move (compile): 07:30:24.613758 => 07:30:24.624279
+[0m07:30:24.625128 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_move
+[0m07:30:24.669500 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_move"
+[0m07:30:24.670396 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:30:24.672235 [debug] [Thread-1 (]: On model.pokemon.dim_move: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_move"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_move`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH MovesData AS (
+  SELECT
+    JSON_EXTRACT_ARRAY(moves, '$') AS moves_array
+    FROM `pokemon-403919`.`pokemon`.`pokemon`
+)
+SELECT
+  JSON_EXTRACT_SCALAR(move, '$.move') AS move,
+  JSON_EXTRACT_SCALAR(move, '$.url') AS url,
+  JSON_EXTRACT_SCALAR(move, '$.id') AS id
+FROM
+  MovesData,
+  UNNEST(moves_array) AS move
+    );
+  
+[0m07:30:25.372878 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:c19004b8-0293-4113-89da-ef7286d0fa00&page=queryresults
+[0m07:30:27.693594 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_move (execute): 07:30:24.625465 => 07:30:27.693249
+[0m07:30:27.694660 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '77139e15-958b-4b5f-8e78-f04fc3ced6ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd23cef5d0>]}
+[0m07:30:27.695444 [info ] [Thread-1 (]: 1 of 2 OK created sql table model pokemon.dim_move ............................. [[32mCREATE TABLE (81.4k rows, 6.3 MiB processed)[0m in 3.08s]
+[0m07:30:27.696317 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_move
+[0m07:30:27.697010 [debug] [Thread-1 (]: Began running node model.pokemon.dim_type
+[0m07:30:27.697750 [info ] [Thread-1 (]: 2 of 2 START sql table model pokemon.dim_type .................................. [RUN]
+[0m07:30:27.698684 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.pokemon.dim_move, now model.pokemon.dim_type)
+[0m07:30:27.699181 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_type
+[0m07:30:27.824017 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_type"
+[0m07:30:27.824933 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (compile): 07:30:27.699525 => 07:30:27.824635
+[0m07:30:27.825483 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_type
+[0m07:30:27.828540 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:30:28.442409 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_type"
+[0m07:30:28.443462 [debug] [Thread-1 (]: On model.pokemon.dim_type: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_type"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH type_cte AS(
+    SELECT DISTINCT
+        to_hex(md5(cast(coalesce(cast(type1 as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(type2 as string), '_dbt_utils_surrogate_key_null_') as string))) AS dim_type_key,
+        type1 AS primary_type,
+        type2 AS secondary_type
+    FROM `pokemon-403919`.`pokemon`.`pokemon`
+)
+SELECT *
+FROM type_cte
+    );
+  
+[0m07:30:28.831359 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:875a5f67-df63-407a-ba6c-a466fa274f4d&page=queryresults
+[0m07:30:30.563290 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (execute): 07:30:27.825812 => 07:30:30.562980
+[0m07:30:30.564302 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '77139e15-958b-4b5f-8e78-f04fc3ced6ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd240c25d0>]}
+[0m07:30:30.565029 [info ] [Thread-1 (]: 2 of 2 OK created sql table model pokemon.dim_type ............................. [[32mCREATE TABLE (207.0 rows, 12.1 KiB processed)[0m in 2.87s]
+[0m07:30:30.565915 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_type
+[0m07:30:30.568481 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:30:30.569040 [debug] [MainThread]: Connection 'list_pokemon-403919' was properly closed.
+[0m07:30:30.569454 [debug] [MainThread]: Connection 'model.pokemon.dim_type' was properly closed.
+[0m07:30:30.569954 [info ] [MainThread]: 
+[0m07:30:30.570605 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 7.19 seconds (7.19s).
+[0m07:30:30.571958 [debug] [MainThread]: Command end result
+[0m07:30:30.588398 [info ] [MainThread]: 
+[0m07:30:30.589227 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m07:30:30.589722 [info ] [MainThread]: 
+[0m07:30:30.590268 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m07:30:30.591357 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 8.194698, "process_user_time": 3.549154, "process_kernel_time": 0.239942, "process_mem_max_rss": "157832", "process_out_blocks": "3440", "process_in_blocks": "0"}
+[0m07:30:30.592037 [debug] [MainThread]: Command `dbt run` succeeded at 07:30:30.591859 after 8.20 seconds
+[0m07:30:30.592518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd262d5090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd23e43f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd25e7ffd0>]}
+[0m07:30:30.593019 [debug] [MainThread]: Flushing usage events
+[0m07:36:02.308952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39eed50c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39ee9e2210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39eed523d0>]}
+
+
+============================== 07:36:02.313930 | 69cb571b-f04b-4fd8-99af-b4b970f095da ==============================
+[0m07:36:02.313930 [info ] [MainThread]: Running with dbt=1.7.1
+[0m07:36:02.314661 [debug] [MainThread]: running dbt with arguments {'log_path': '/usr/local/airflow/include/dbt/logs', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt', 'log_cache_events': 'False', 'printer_width': '80', 'warn_error': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'indirect_selection': 'eager', 'fail_fast': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'use_experimental_parser': 'False', 'use_colors': 'True', 'write_json': 'True', 'partial_parse': 'True', 'target_path': 'None', 'quiet': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'cache_selected_only': 'False', 'log_format': 'default', 'version_check': 'True'}
+[0m07:36:02.941321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '69cb571b-f04b-4fd8-99af-b4b970f095da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39ec921250>]}
+[0m07:36:03.039367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '69cb571b-f04b-4fd8-99af-b4b970f095da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39ee720150>]}
+[0m07:36:03.040429 [info ] [MainThread]: Registered adapter: bigquery=1.7.1
+[0m07:36:03.057767 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m07:36:03.133720 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m07:36:03.135145 [debug] [MainThread]: Partial parsing: updated file: pokemon://models/transform/dim_move.sql
+[0m07:36:03.326503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '69cb571b-f04b-4fd8-99af-b4b970f095da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39ec874ed0>]}
+[0m07:36:03.342061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '69cb571b-f04b-4fd8-99af-b4b970f095da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39ec613bd0>]}
+[0m07:36:03.342714 [info ] [MainThread]: Found 2 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m07:36:03.343408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '69cb571b-f04b-4fd8-99af-b4b970f095da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39ec594c10>]}
+[0m07:36:03.345309 [info ] [MainThread]: 
+[0m07:36:03.346596 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m07:36:03.348874 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pokemon-403919'
+[0m07:36:03.349672 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:36:04.067152 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pokemon-403919, now list_pokemon-403919_pokemon)
+[0m07:36:04.067891 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m07:36:04.649621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '69cb571b-f04b-4fd8-99af-b4b970f095da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39ec545f90>]}
+[0m07:36:04.651319 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m07:36:04.652236 [info ] [MainThread]: 
+[0m07:36:04.662841 [debug] [Thread-1 (]: Began running node model.pokemon.dim_move
+[0m07:36:04.663843 [info ] [Thread-1 (]: 1 of 2 START sql table model pokemon.dim_move .................................. [RUN]
+[0m07:36:04.665187 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pokemon-403919_pokemon, now model.pokemon.dim_move)
+[0m07:36:04.665875 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_move
+[0m07:36:04.675698 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_move"
+[0m07:36:04.676928 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_move (compile): 07:36:04.666314 => 07:36:04.676459
+[0m07:36:04.677564 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_move
+[0m07:36:04.694330 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:36:05.329958 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_move"
+[0m07:36:05.331349 [debug] [Thread-1 (]: On model.pokemon.dim_move: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_move"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_move`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH MovesData AS (
+  SELECT
+    JSON_EXTRACT_ARRAY(moves, '$') AS moves_array
+    FROM `pokemon-403919`.`pokemon`.`pokemon`
+), move_cte(
+    SELECT
+    JSON_EXTRACT_SCALAR(move, '$.move') AS move,
+    JSON_EXTRACT_SCALAR(move, '$.url') AS url,
+    JSON_EXTRACT_SCALAR(move, '$.id') AS id
+    FROM
+    MovesData,
+    UNNEST(moves_array) AS move
+)
+SELECT *
+FROM move_cte
+    );
+  
+[0m07:36:05.597974 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:5c4e6b9b-1ee0-429b-ab68-9398d0d5bde6&page=queryresults
+[0m07:36:05.599711 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected keyword AS but got "(" at [17:12]')
+[0m07:36:06.498458 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:247b0c82-beb0-4903-8e1c-8e49986a9a6c&page=queryresults
+[0m07:36:06.501854 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:247b0c82-beb0-4903-8e1c-8e49986a9a6c&page=queryresults
+[0m07:36:06.504287 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_move (execute): 07:36:04.677910 => 07:36:06.503594
+[0m07:36:06.519762 [debug] [Thread-1 (]: Database Error in model dim_move (models/transform/dim_move.sql)
+  Syntax error: Expected keyword AS but got "(" at [17:12]
+  compiled Code at target/run/pokemon/models/transform/dim_move.sql
+[0m07:36:06.521062 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '69cb571b-f04b-4fd8-99af-b4b970f095da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39ec80e4d0>]}
+[0m07:36:06.522317 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model pokemon.dim_move ......................... [[31mERROR[0m in 1.86s]
+[0m07:36:06.524815 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_move
+[0m07:36:06.526824 [debug] [Thread-1 (]: Began running node model.pokemon.dim_type
+[0m07:36:06.528158 [info ] [Thread-1 (]: 2 of 2 START sql table model pokemon.dim_type .................................. [RUN]
+[0m07:36:06.529730 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.pokemon.dim_move, now model.pokemon.dim_type)
+[0m07:36:06.530473 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_type
+[0m07:36:06.660818 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_type"
+[0m07:36:06.661803 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (compile): 07:36:06.531067 => 07:36:06.661491
+[0m07:36:06.662339 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_type
+[0m07:36:06.665586 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:36:07.196004 [info ] [MainThread]: [33mThe bigquery adapter does not support query cancellation. Some queries may still be running![0m
+[0m07:36:07.239777 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_type"
+[0m07:36:07.240689 [debug] [Thread-1 (]: On model.pokemon.dim_type: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_type"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH type_cte AS(
+    SELECT DISTINCT
+        to_hex(md5(cast(coalesce(cast(type1 as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(type2 as string), '_dbt_utils_surrogate_key_null_') as string))) AS dim_type_key,
+        type1 AS primary_type,
+        type2 AS secondary_type
+    FROM `pokemon-403919`.`pokemon`.`pokemon`
+)
+SELECT *
+FROM type_cte
+    );
+  
+[0m07:36:07.608035 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:fd578d3b-3747-4ed3-b338-ba2eddd01fc9&page=queryresults
+[0m07:36:09.633098 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (execute): 07:36:06.662678 => 07:36:09.632732
+[0m07:36:09.635110 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '69cb571b-f04b-4fd8-99af-b4b970f095da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39ec90f650>]}
+[0m07:36:09.638072 [info ] [Thread-1 (]: 2 of 2 OK created sql table model pokemon.dim_type ............................. [[32mCREATE TABLE (207.0 rows, 12.1 KiB processed)[0m in 3.11s]
+[0m07:36:09.646278 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_type
+[0m07:36:09.647652 [info ] [MainThread]: 
+[0m07:36:09.648620 [info ] [MainThread]: [33mExited because of keyboard interrupt[0m
+[0m07:36:09.649355 [info ] [MainThread]: 
+[0m07:36:09.650274 [error] [MainThread]:   Database Error in model dim_move (models/transform/dim_move.sql)
+  Syntax error: Expected keyword AS but got "(" at [17:12]
+  compiled Code at target/run/pokemon/models/transform/dim_move.sql
+[0m07:36:09.651058 [info ] [MainThread]: 
+[0m07:36:09.651859 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m07:36:09.652611 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:36:09.653291 [debug] [MainThread]: Connection 'model.pokemon.dim_type' was properly closed.
+[0m07:36:09.654001 [info ] [MainThread]: 
+[0m07:36:09.654767 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 6.31 seconds (6.31s).
+[0m07:36:09.655603 [error] [MainThread]: Encountered an error:
+
+[0m07:36:09.668070 [error] [MainThread]: Traceback (most recent call last):
+  File "/usr/local/airflow/dbt_venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 90, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/airflow/dbt_venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 75, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/airflow/dbt_venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 168, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/airflow/dbt_venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 197, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/airflow/dbt_venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 244, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/airflow/dbt_venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 284, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/airflow/dbt_venv/lib/python3.11/site-packages/dbt/cli/main.py", line 625, in run
+    results = task.run()
+              ^^^^^^^^^^
+  File "/usr/local/airflow/dbt_venv/lib/python3.11/site-packages/dbt/task/runnable.py", line 474, in run
+    result = self.execute_with_hooks(selected_uids)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/airflow/dbt_venv/lib/python3.11/site-packages/dbt/task/runnable.py", line 435, in execute_with_hooks
+    res = self.execute_nodes()
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/airflow/dbt_venv/lib/python3.11/site-packages/dbt/task/runnable.py", line 359, in execute_nodes
+    self.run_queue(pool)
+  File "/usr/local/airflow/dbt_venv/lib/python3.11/site-packages/dbt/task/runnable.py", line 291, in run_queue
+    self.job_queue.join()
+  File "/usr/local/airflow/dbt_venv/lib/python3.11/site-packages/dbt/graph/queue.py", line 198, in join
+    self.inner.join()
+  File "/usr/local/lib/python3.11/queue.py", line 90, in join
+    self.all_tasks_done.wait()
+  File "/usr/local/lib/python3.11/threading.py", line 327, in wait
+    waiter.acquire()
+KeyboardInterrupt
+
+[0m07:36:09.669999 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 7.4043183, "process_user_time": 3.630207, "process_kernel_time": 0.452518, "process_mem_max_rss": "161384", "process_out_blocks": "2344", "command_success": false, "process_in_blocks": "0"}
+[0m07:36:09.671139 [debug] [MainThread]: Command `dbt run` failed at 07:36:09.670867 after 7.41 seconds
+[0m07:36:09.671881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39f3969bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39f1a79950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39ee990190>]}
+[0m07:36:09.672588 [debug] [MainThread]: Flushing usage events
+[0m07:36:21.597789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1dafc9650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1d81b4e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1d7c0c350>]}
+
+
+============================== 07:36:21.603182 | f46e3ffb-9b13-4ad6-9d8d-01af26a3f471 ==============================
+[0m07:36:21.603182 [info ] [MainThread]: Running with dbt=1.7.1
+[0m07:36:21.604042 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'log_format': 'default', 'target_path': 'None', 'use_experimental_parser': 'False', 'printer_width': '80', 'version_check': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error': 'None', 'static_parser': 'True', 'write_json': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'log_path': '/usr/local/airflow/include/dbt/logs'}
+[0m07:36:22.191606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f46e3ffb-9b13-4ad6-9d8d-01af26a3f471', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1d5e351d0>]}
+[0m07:36:22.282741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f46e3ffb-9b13-4ad6-9d8d-01af26a3f471', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1d7bfbe90>]}
+[0m07:36:22.283709 [info ] [MainThread]: Registered adapter: bigquery=1.7.1
+[0m07:36:22.299160 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m07:36:22.333815 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m07:36:22.334654 [debug] [MainThread]: Partial parsing: updated file: pokemon://models/transform/dim_move.sql
+[0m07:36:22.502757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f46e3ffb-9b13-4ad6-9d8d-01af26a3f471', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1d5cfc350>]}
+[0m07:36:22.517047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f46e3ffb-9b13-4ad6-9d8d-01af26a3f471', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1d5a1f850>]}
+[0m07:36:22.517736 [info ] [MainThread]: Found 2 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m07:36:22.518281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f46e3ffb-9b13-4ad6-9d8d-01af26a3f471', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1d5a32f50>]}
+[0m07:36:22.519923 [info ] [MainThread]: 
+[0m07:36:22.520938 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m07:36:22.522583 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pokemon-403919'
+[0m07:36:22.523219 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:36:23.114458 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pokemon-403919, now list_pokemon-403919_pokemon)
+[0m07:36:23.115163 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m07:36:23.728499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f46e3ffb-9b13-4ad6-9d8d-01af26a3f471', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1d5c1a790>]}
+[0m07:36:23.729980 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m07:36:23.730765 [info ] [MainThread]: 
+[0m07:36:23.741086 [debug] [Thread-1 (]: Began running node model.pokemon.dim_move
+[0m07:36:23.742092 [info ] [Thread-1 (]: 1 of 2 START sql table model pokemon.dim_move .................................. [RUN]
+[0m07:36:23.743389 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pokemon-403919_pokemon, now model.pokemon.dim_move)
+[0m07:36:23.744148 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_move
+[0m07:36:23.761897 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_move"
+[0m07:36:23.763169 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_move (compile): 07:36:23.744602 => 07:36:23.762732
+[0m07:36:23.763845 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_move
+[0m07:36:23.785806 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:36:24.436946 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_move"
+[0m07:36:24.438026 [debug] [Thread-1 (]: On model.pokemon.dim_move: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_move"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_move`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH MovesData AS (
+  SELECT
+    JSON_EXTRACT_ARRAY(moves, '$') AS moves_array
+    FROM `pokemon-403919`.`pokemon`.`pokemon`
+), 
+move_cte AS(
+    SELECT
+    JSON_EXTRACT_SCALAR(move, '$.move') AS move,
+    JSON_EXTRACT_SCALAR(move, '$.url') AS url,
+    JSON_EXTRACT_SCALAR(move, '$.id') AS id
+    FROM
+    MovesData,
+    UNNEST(moves_array) AS move
+)
+SELECT 
+     to_hex(md5(cast(coalesce(cast(move as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(url as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(id as string), '_dbt_utils_surrogate_key_null_') as string))) AS dim_move_key,
+    move,
+    url,
+    id
+    FROM move_cte
+    );
+  
+[0m07:36:24.796854 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:9e6c5a6b-5697-49c7-ae85-28b4478c3655&page=queryresults
+[0m07:36:27.765072 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_move (execute): 07:36:23.764321 => 07:36:27.764783
+[0m07:36:27.766213 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f46e3ffb-9b13-4ad6-9d8d-01af26a3f471', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1d5bc7390>]}
+[0m07:36:27.766956 [info ] [Thread-1 (]: 1 of 2 OK created sql table model pokemon.dim_move ............................. [[32mCREATE TABLE (81.4k rows, 6.3 MiB processed)[0m in 4.02s]
+[0m07:36:27.768124 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_move
+[0m07:36:27.768882 [debug] [Thread-1 (]: Began running node model.pokemon.dim_type
+[0m07:36:27.769653 [info ] [Thread-1 (]: 2 of 2 START sql table model pokemon.dim_type .................................. [RUN]
+[0m07:36:27.770614 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.pokemon.dim_move, now model.pokemon.dim_type)
+[0m07:36:27.771136 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_type
+[0m07:36:27.777266 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_type"
+[0m07:36:27.778494 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (compile): 07:36:27.771501 => 07:36:27.778078
+[0m07:36:27.779104 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_type
+[0m07:36:27.782507 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:36:28.365434 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_type"
+[0m07:36:28.366596 [debug] [Thread-1 (]: On model.pokemon.dim_type: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_type"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH type_cte AS(
+    SELECT DISTINCT
+        to_hex(md5(cast(coalesce(cast(type1 as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(type2 as string), '_dbt_utils_surrogate_key_null_') as string))) AS dim_type_key,
+        type1 AS primary_type,
+        type2 AS secondary_type
+    FROM `pokemon-403919`.`pokemon`.`pokemon`
+)
+SELECT *
+FROM type_cte
+    );
+  
+[0m07:36:28.770150 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:8a91d22a-8667-4f65-97a5-04e4d50bd583&page=queryresults
+[0m07:36:30.729441 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (execute): 07:36:27.779489 => 07:36:30.729127
+[0m07:36:30.730754 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f46e3ffb-9b13-4ad6-9d8d-01af26a3f471', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1d7bec650>]}
+[0m07:36:30.731724 [info ] [Thread-1 (]: 2 of 2 OK created sql table model pokemon.dim_type ............................. [[32mCREATE TABLE (207.0 rows, 12.1 KiB processed)[0m in 2.96s]
+[0m07:36:30.732675 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_type
+[0m07:36:30.735342 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:36:30.735885 [debug] [MainThread]: Connection 'model.pokemon.dim_type' was properly closed.
+[0m07:36:30.736409 [info ] [MainThread]: 
+[0m07:36:30.736942 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 8.22 seconds (8.22s).
+[0m07:36:30.738099 [debug] [MainThread]: Command end result
+[0m07:36:30.752331 [info ] [MainThread]: 
+[0m07:36:30.753116 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m07:36:30.753717 [info ] [MainThread]: 
+[0m07:36:30.754304 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m07:36:30.755367 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 9.204983, "process_user_time": 3.552136, "process_kernel_time": 0.17204, "process_mem_max_rss": "157352", "process_out_blocks": "3432", "process_in_blocks": "0"}
+[0m07:36:30.756020 [debug] [MainThread]: Command `dbt run` succeeded at 07:36:30.755849 after 9.21 seconds
+[0m07:36:30.756608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1d7bcd410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1d7bcfc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1dcd18a50>]}
+[0m07:36:30.757104 [debug] [MainThread]: Flushing usage events
+[0m07:37:41.937351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb078f6c090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb07947c450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb07906aad0>]}
+
+
+============================== 07:37:41.942451 | cf25d8a4-32ef-4d3d-89bc-bd8b4f8625f2 ==============================
+[0m07:37:41.942451 [info ] [MainThread]: Running with dbt=1.7.1
+[0m07:37:41.943289 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'printer_width': '80', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'warn_error': 'None', 'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'quiet': 'False', 'log_cache_events': 'False', 'log_format': 'default', 'log_path': '/usr/local/airflow/include/dbt/logs', 'introspect': 'True', 'static_parser': 'True', 'use_colors': 'True', 'version_check': 'True', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt', 'no_print': 'None', 'debug': 'False'}
+[0m07:37:42.523283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cf25d8a4-32ef-4d3d-89bc-bd8b4f8625f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb076e13290>]}
+[0m07:37:42.615261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cf25d8a4-32ef-4d3d-89bc-bd8b4f8625f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb078c30350>]}
+[0m07:37:42.616317 [info ] [MainThread]: Registered adapter: bigquery=1.7.1
+[0m07:37:42.634209 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m07:37:42.671394 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m07:37:42.672229 [debug] [MainThread]: Partial parsing: updated file: pokemon://models/transform/dim_move.sql
+[0m07:37:42.855711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cf25d8a4-32ef-4d3d-89bc-bd8b4f8625f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb076c70f50>]}
+[0m07:37:42.869089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cf25d8a4-32ef-4d3d-89bc-bd8b4f8625f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb076a52c90>]}
+[0m07:37:42.869699 [info ] [MainThread]: Found 2 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m07:37:42.870181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cf25d8a4-32ef-4d3d-89bc-bd8b4f8625f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb076ebd510>]}
+[0m07:37:42.871771 [info ] [MainThread]: 
+[0m07:37:42.872752 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m07:37:42.874399 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pokemon-403919'
+[0m07:37:42.875031 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:37:43.484365 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pokemon-403919, now list_pokemon-403919_pokemon)
+[0m07:37:43.485251 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m07:37:44.067001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cf25d8a4-32ef-4d3d-89bc-bd8b4f8625f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb076a7c090>]}
+[0m07:37:44.068472 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m07:37:44.069146 [info ] [MainThread]: 
+[0m07:37:44.077274 [debug] [Thread-1 (]: Began running node model.pokemon.dim_move
+[0m07:37:44.078218 [info ] [Thread-1 (]: 1 of 2 START sql table model pokemon.dim_move .................................. [RUN]
+[0m07:37:44.079505 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pokemon-403919_pokemon, now model.pokemon.dim_move)
+[0m07:37:44.080117 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_move
+[0m07:37:44.091972 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_move"
+[0m07:37:44.092993 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_move (compile): 07:37:44.080470 => 07:37:44.092660
+[0m07:37:44.093563 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_move
+[0m07:37:44.109808 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:37:44.746425 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_move"
+[0m07:37:44.747413 [debug] [Thread-1 (]: On model.pokemon.dim_move: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_move"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_move`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH MovesData AS (
+  SELECT
+    JSON_EXTRACT_ARRAY(moves, '$') AS moves_array
+    FROM `pokemon-403919`.`pokemon`.`pokemon`
+), 
+move_cte AS(
+    SELECT
+    JSON_EXTRACT_SCALAR(move, '$.move') AS move,
+    JSON_EXTRACT_SCALAR(move, '$.url') AS url,
+    JSON_EXTRACT_SCALAR(move, '$.id') AS id
+    FROM
+    MovesData,
+    UNNEST(moves_array) AS move
+)
+SELECT DISTINCT
+     to_hex(md5(cast(coalesce(cast(move as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(url as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(id as string), '_dbt_utils_surrogate_key_null_') as string))) AS dim_move_key,
+    move,
+    url,
+    id
+    FROM move_cte
+    );
+  
+[0m07:37:45.141168 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:1040f40c-1794-4b86-a44e-94533da24c4d&page=queryresults
+[0m07:37:47.514495 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_move (execute): 07:37:44.093889 => 07:37:47.514188
+[0m07:37:47.515598 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cf25d8a4-32ef-4d3d-89bc-bd8b4f8625f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb076a7c410>]}
+[0m07:37:47.516461 [info ] [Thread-1 (]: 1 of 2 OK created sql table model pokemon.dim_move ............................. [[32mCREATE TABLE (783.0 rows, 6.3 MiB processed)[0m in 3.44s]
+[0m07:37:47.517703 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_move
+[0m07:37:47.518617 [debug] [Thread-1 (]: Began running node model.pokemon.dim_type
+[0m07:37:47.519427 [info ] [Thread-1 (]: 2 of 2 START sql table model pokemon.dim_type .................................. [RUN]
+[0m07:37:47.520380 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.pokemon.dim_move, now model.pokemon.dim_type)
+[0m07:37:47.520868 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_type
+[0m07:37:47.526783 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_type"
+[0m07:37:47.527810 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (compile): 07:37:47.521188 => 07:37:47.527479
+[0m07:37:47.528368 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_type
+[0m07:37:47.531411 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:37:48.152735 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_type"
+[0m07:37:48.153851 [debug] [Thread-1 (]: On model.pokemon.dim_type: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_type"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH type_cte AS(
+    SELECT DISTINCT
+        to_hex(md5(cast(coalesce(cast(type1 as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(type2 as string), '_dbt_utils_surrogate_key_null_') as string))) AS dim_type_key,
+        type1 AS primary_type,
+        type2 AS secondary_type
+    FROM `pokemon-403919`.`pokemon`.`pokemon`
+)
+SELECT *
+FROM type_cte
+    );
+  
+[0m07:37:48.488072 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:724edc6e-bf10-4afa-ba68-53e352eeb3dd&page=queryresults
+[0m07:37:50.437651 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (execute): 07:37:47.528713 => 07:37:50.437277
+[0m07:37:50.438970 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cf25d8a4-32ef-4d3d-89bc-bd8b4f8625f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb076a2f810>]}
+[0m07:37:50.439932 [info ] [Thread-1 (]: 2 of 2 OK created sql table model pokemon.dim_type ............................. [[32mCREATE TABLE (207.0 rows, 12.1 KiB processed)[0m in 2.92s]
+[0m07:37:50.441080 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_type
+[0m07:37:50.444446 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:37:50.445123 [debug] [MainThread]: Connection 'model.pokemon.dim_type' was properly closed.
+[0m07:37:50.445800 [info ] [MainThread]: 
+[0m07:37:50.446461 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 7.57 seconds (7.57s).
+[0m07:37:50.448110 [debug] [MainThread]: Command end result
+[0m07:37:50.461959 [info ] [MainThread]: 
+[0m07:37:50.462577 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m07:37:50.463152 [info ] [MainThread]: 
+[0m07:37:50.463659 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m07:37:50.464636 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 8.595554, "process_user_time": 3.564966, "process_kernel_time": 0.170237, "process_mem_max_rss": "156056", "process_out_blocks": "3440", "process_in_blocks": "0"}
+[0m07:37:50.465267 [debug] [MainThread]: Command `dbt run` succeeded at 07:37:50.465099 after 8.60 seconds
+[0m07:37:50.465742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb078bf81d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb079084e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb07dd73b90>]}
+[0m07:37:50.466255 [debug] [MainThread]: Flushing usage events
+[0m07:56:17.253287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cacdcc6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cad640810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cad1ca3d0>]}
+
+
+============================== 07:56:17.258298 | 570e938b-1264-4981-a790-142044215040 ==============================
+[0m07:56:17.258298 [info ] [MainThread]: Running with dbt=1.7.1
+[0m07:56:17.259166 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt', 'debug': 'False', 'partial_parse': 'True', 'log_cache_events': 'False', 'static_parser': 'True', 'cache_selected_only': 'False', 'printer_width': '80', 'use_colors': 'True', 'target_path': 'None', 'fail_fast': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'warn_error': 'None', 'indirect_selection': 'eager', 'profiles_dir': '/usr/local/airflow/include/dbt', 'write_json': 'True', 'log_format': 'default'}
+[0m07:56:17.844765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '570e938b-1264-4981-a790-142044215040', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8caad16a50>]}
+[0m07:56:17.934801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '570e938b-1264-4981-a790-142044215040', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cac9781d0>]}
+[0m07:56:17.935716 [info ] [MainThread]: Registered adapter: bigquery=1.7.1
+[0m07:56:17.951189 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m07:56:17.990929 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m07:56:17.991796 [debug] [MainThread]: Partial parsing: updated file: pokemon://models/transform/dim_move.sql
+[0m07:56:18.180577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '570e938b-1264-4981-a790-142044215040', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8caa91d510>]}
+[0m07:56:18.196234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '570e938b-1264-4981-a790-142044215040', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8caaa29d50>]}
+[0m07:56:18.196888 [info ] [MainThread]: Found 2 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m07:56:18.197499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '570e938b-1264-4981-a790-142044215040', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cb0b22690>]}
+[0m07:56:18.199407 [info ] [MainThread]: 
+[0m07:56:18.200654 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m07:56:18.202407 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pokemon-403919'
+[0m07:56:18.203198 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:56:18.909313 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pokemon-403919, now list_pokemon-403919_pokemon)
+[0m07:56:18.910169 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m07:56:19.496091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '570e938b-1264-4981-a790-142044215040', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8caabe8350>]}
+[0m07:56:19.497643 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m07:56:19.498574 [info ] [MainThread]: 
+[0m07:56:19.509799 [debug] [Thread-1 (]: Began running node model.pokemon.dim_move
+[0m07:56:19.510805 [info ] [Thread-1 (]: 1 of 2 START sql table model pokemon.dim_move .................................. [RUN]
+[0m07:56:19.512045 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pokemon-403919_pokemon, now model.pokemon.dim_move)
+[0m07:56:19.512663 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_move
+[0m07:56:19.523834 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_move"
+[0m07:56:19.524915 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_move (compile): 07:56:19.513026 => 07:56:19.524599
+[0m07:56:19.525449 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_move
+[0m07:56:19.541048 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:56:20.165249 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_move"
+[0m07:56:20.166159 [debug] [Thread-1 (]: On model.pokemon.dim_move: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_move"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_move`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH MovesData AS (
+  SELECT
+    id ,
+    JSON_EXTRACT_ARRAY(moves, '$') AS moves_array
+    FROM `pokemon-403919`.`pokemon`.`pokemon`
+), 
+move_cte AS(
+    SELECT
+    id AS pokemon_id,
+    JSON_EXTRACT_SCALAR(move, '$.move') AS move,
+    JSON_EXTRACT_SCALAR(move, '$.url') AS url,
+    JSON_EXTRACT_SCALAR(move, '$.id') AS id
+    FROM
+    MovesData,
+    UNNEST(moves_array) AS move
+)
+SELECT DISTINCT
+     to_hex(md5(cast(coalesce(cast(pokemon_id as string), '_dbt_utils_surrogate_key_null_') as string))) AS dim_move_key,
+    pokemon_id,
+    move,
+    url,
+    id
+    FROM move_cte
+    );
+  
+[0m07:56:20.530418 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:321593f8-51fa-4340-9525-e377a2405485&page=queryresults
+[0m07:56:23.155969 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_move (execute): 07:56:19.525776 => 07:56:23.155662
+[0m07:56:23.157004 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '570e938b-1264-4981-a790-142044215040', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8caa7b90d0>]}
+[0m07:56:23.157739 [info ] [Thread-1 (]: 1 of 2 OK created sql table model pokemon.dim_move ............................. [[32mCREATE TABLE (81.4k rows, 6.3 MiB processed)[0m in 3.65s]
+[0m07:56:23.158605 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_move
+[0m07:56:23.159286 [debug] [Thread-1 (]: Began running node model.pokemon.dim_type
+[0m07:56:23.160000 [info ] [Thread-1 (]: 2 of 2 START sql table model pokemon.dim_type .................................. [RUN]
+[0m07:56:23.160898 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.pokemon.dim_move, now model.pokemon.dim_type)
+[0m07:56:23.161385 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_type
+[0m07:56:23.259713 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_type"
+[0m07:56:23.260722 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (compile): 07:56:23.161712 => 07:56:23.260376
+[0m07:56:23.261266 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_type
+[0m07:56:23.264138 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:56:23.842658 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_type"
+[0m07:56:23.844052 [debug] [Thread-1 (]: On model.pokemon.dim_type: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_type"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH type_cte AS(
+    SELECT DISTINCT
+        to_hex(md5(cast(coalesce(cast(type1 as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(type2 as string), '_dbt_utils_surrogate_key_null_') as string))) AS dim_type_key,
+        type1 AS primary_type,
+        type2 AS secondary_type
+    FROM `pokemon-403919`.`pokemon`.`pokemon`
+)
+SELECT *
+FROM type_cte
+    );
+  
+[0m07:56:24.195089 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:f3f96b3e-7f63-4bbe-b3ab-391ecb953ab2&page=queryresults
+[0m07:56:26.197773 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (execute): 07:56:23.261592 => 07:56:26.197436
+[0m07:56:26.198850 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '570e938b-1264-4981-a790-142044215040', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8caa7caad0>]}
+[0m07:56:26.199578 [info ] [Thread-1 (]: 2 of 2 OK created sql table model pokemon.dim_type ............................. [[32mCREATE TABLE (207.0 rows, 12.1 KiB processed)[0m in 3.04s]
+[0m07:56:26.200462 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_type
+[0m07:56:26.203138 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:56:26.203621 [debug] [MainThread]: Connection 'model.pokemon.dim_type' was properly closed.
+[0m07:56:26.204077 [info ] [MainThread]: 
+[0m07:56:26.204591 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 8.00 seconds (8.00s).
+[0m07:56:26.205677 [debug] [MainThread]: Command end result
+[0m07:56:26.218177 [info ] [MainThread]: 
+[0m07:56:26.218818 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m07:56:26.219427 [info ] [MainThread]: 
+[0m07:56:26.220861 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m07:56:26.223790 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 9.013763, "process_user_time": 3.540663, "process_kernel_time": 0.324645, "process_mem_max_rss": "158356", "process_in_blocks": "792", "process_out_blocks": "3448"}
+[0m07:56:26.224694 [debug] [MainThread]: Command `dbt run` succeeded at 07:56:26.224490 after 9.01 seconds
+[0m07:56:26.225209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cac944490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cacdb9c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8caccadb50>]}
+[0m07:56:26.225697 [debug] [MainThread]: Flushing usage events
+[0m08:03:51.207077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc05fd31910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc05dccc690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc05d846210>]}
+
+
+============================== 08:03:51.212503 | 79a87c6b-0434-4919-9a1b-fb3ec4b69907 ==============================
+[0m08:03:51.212503 [info ] [MainThread]: Running with dbt=1.7.1
+[0m08:03:51.213467 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'partial_parse': 'True', 'fail_fast': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt', 'use_colors': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'introspect': 'True', 'version_check': 'True', 'printer_width': '80', 'no_print': 'None', 'use_experimental_parser': 'False', 'target_path': 'None', 'static_parser': 'True', 'debug': 'False', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])'}
+[0m08:03:51.882918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '79a87c6b-0434-4919-9a1b-fb3ec4b69907', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc05b69aa50>]}
+[0m08:03:51.988752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '79a87c6b-0434-4919-9a1b-fb3ec4b69907', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc05d5f8450>]}
+[0m08:03:51.989847 [info ] [MainThread]: Registered adapter: bigquery=1.7.1
+[0m08:03:52.005954 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m08:03:52.045162 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m08:03:52.045939 [debug] [MainThread]: Partial parsing: updated file: pokemon://models/transform/dim_move.sql
+[0m08:03:52.243031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '79a87c6b-0434-4919-9a1b-fb3ec4b69907', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc05b6d7050>]}
+[0m08:03:52.260263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '79a87c6b-0434-4919-9a1b-fb3ec4b69907', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc05b4a7d10>]}
+[0m08:03:52.261092 [info ] [MainThread]: Found 2 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m08:03:52.261786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '79a87c6b-0434-4919-9a1b-fb3ec4b69907', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc05b769990>]}
+[0m08:03:52.263723 [info ] [MainThread]: 
+[0m08:03:52.265026 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m08:03:52.266685 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pokemon-403919'
+[0m08:03:52.267461 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:03:52.990132 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pokemon-403919, now list_pokemon-403919_pokemon)
+[0m08:03:52.991467 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m08:03:53.671937 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '79a87c6b-0434-4919-9a1b-fb3ec4b69907', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc05b4eed50>]}
+[0m08:03:53.674820 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m08:03:53.685609 [info ] [MainThread]: 
+[0m08:03:53.703232 [debug] [Thread-1 (]: Began running node model.pokemon.dim_move
+[0m08:03:53.704850 [info ] [Thread-1 (]: 1 of 2 START sql table model pokemon.dim_move .................................. [RUN]
+[0m08:03:53.706601 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pokemon-403919_pokemon, now model.pokemon.dim_move)
+[0m08:03:53.707532 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_move
+[0m08:03:53.734916 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_move"
+[0m08:03:53.736294 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_move (compile): 08:03:53.708042 => 08:03:53.735926
+[0m08:03:53.736913 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_move
+[0m08:03:53.758759 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m08:03:54.440236 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_move"
+[0m08:03:54.441313 [debug] [Thread-1 (]: On model.pokemon.dim_move: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_move"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_move`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH MovesData AS (
+  SELECT
+    id ,
+    JSON_EXTRACT_ARRAY(moves, '$') AS moves_array
+    FROM `pokemon-403919`.`pokemon`.`pokemon`
+), 
+move_cte AS(
+    SELECT
+    id AS pokemon_id,
+    JSON_EXTRACT_SCALAR(move, '$.move') AS move,
+    JSON_EXTRACT_SCALAR(move, '$.url') AS url,
+    JSON_EXTRACT_SCALAR(move, '$.id') AS id
+    FROM
+    MovesData,
+    UNNEST(moves_array) AS move
+)
+SELECT 
+     to_hex(md5(cast(coalesce(cast(pokemon_id as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(move as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(url as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(id as string), '_dbt_utils_surrogate_key_null_') as string))) AS dim_move_key,
+    pokemon_id,
+    move,
+    url,
+    id
+    FROM move_cte
+    );
+  
+[0m08:03:54.879672 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:6eb83a5a-578a-455d-b7cd-38eb44b88a20&page=queryresults
+[0m08:03:57.622895 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_move (execute): 08:03:53.737261 => 08:03:57.622444
+[0m08:03:57.624456 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79a87c6b-0434-4919-9a1b-fb3ec4b69907', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc05b6d7490>]}
+[0m08:03:57.625499 [info ] [Thread-1 (]: 1 of 2 OK created sql table model pokemon.dim_move ............................. [[32mCREATE TABLE (81.4k rows, 6.3 MiB processed)[0m in 3.92s]
+[0m08:03:57.626648 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_move
+[0m08:03:57.627609 [debug] [Thread-1 (]: Began running node model.pokemon.dim_type
+[0m08:03:57.628641 [info ] [Thread-1 (]: 2 of 2 START sql table model pokemon.dim_type .................................. [RUN]
+[0m08:03:57.630363 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.pokemon.dim_move, now model.pokemon.dim_type)
+[0m08:03:57.631073 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_type
+[0m08:03:57.637669 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_type"
+[0m08:03:57.638846 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (compile): 08:03:57.631465 => 08:03:57.638419
+[0m08:03:57.639734 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_type
+[0m08:03:57.643915 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m08:03:58.246179 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_type"
+[0m08:03:58.247795 [debug] [Thread-1 (]: On model.pokemon.dim_type: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_type"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH type_cte AS(
+    SELECT DISTINCT
+        to_hex(md5(cast(coalesce(cast(type1 as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(type2 as string), '_dbt_utils_surrogate_key_null_') as string))) AS dim_type_key,
+        type1 AS primary_type,
+        type2 AS secondary_type
+    FROM `pokemon-403919`.`pokemon`.`pokemon`
+)
+SELECT *
+FROM type_cte
+    );
+  
+[0m08:03:58.631013 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:b2a86f9f-44ae-43d4-a271-87cfa68f521b&page=queryresults
+[0m08:04:00.735602 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (execute): 08:03:57.640314 => 08:04:00.735275
+[0m08:04:00.736904 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79a87c6b-0434-4919-9a1b-fb3ec4b69907', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc05b64b950>]}
+[0m08:04:00.737780 [info ] [Thread-1 (]: 2 of 2 OK created sql table model pokemon.dim_type ............................. [[32mCREATE TABLE (207.0 rows, 12.1 KiB processed)[0m in 3.11s]
+[0m08:04:00.738772 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_type
+[0m08:04:00.742472 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:04:00.743153 [debug] [MainThread]: Connection 'model.pokemon.dim_type' was properly closed.
+[0m08:04:00.743910 [info ] [MainThread]: 
+[0m08:04:00.745244 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 8.48 seconds (8.48s).
+[0m08:04:00.748374 [debug] [MainThread]: Command end result
+[0m08:04:00.762535 [info ] [MainThread]: 
+[0m08:04:00.763246 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m08:04:00.764454 [info ] [MainThread]: 
+[0m08:04:00.765321 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m08:04:00.766793 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 9.609226, "process_user_time": 4.146893, "process_kernel_time": 0.34806, "process_mem_max_rss": "155688", "process_out_blocks": "3448", "process_in_blocks": "0"}
+[0m08:04:00.767539 [debug] [MainThread]: Command `dbt run` succeeded at 08:04:00.767368 after 9.61 seconds
+[0m08:04:00.768140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc05dc2d390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc05d8cc890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc0626eb890>]}
+[0m08:04:00.768613 [debug] [MainThread]: Flushing usage events
+[0m08:04:51.472587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefaf3c5390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefaf3c6410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefaf696dd0>]}
+
+
+============================== 08:04:51.477809 | 2d361918-a0aa-46dd-b99b-0e23dbff762a ==============================
+[0m08:04:51.477809 [info ] [MainThread]: Running with dbt=1.7.1
+[0m08:04:51.478537 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/usr/local/airflow/include/dbt', 'write_json': 'True', 'static_parser': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'version_check': 'True', 'quiet': 'False', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'debug': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'introspect': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt', 'indirect_selection': 'eager', 'no_print': 'None'}
+[0m08:04:52.139697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2d361918-a0aa-46dd-b99b-0e23dbff762a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefad48dbd0>]}
+[0m08:04:52.241365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2d361918-a0aa-46dd-b99b-0e23dbff762a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefaf3ec410>]}
+[0m08:04:52.242426 [info ] [MainThread]: Registered adapter: bigquery=1.7.1
+[0m08:04:52.260310 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m08:04:52.304922 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m08:04:52.306205 [debug] [MainThread]: Partial parsing: updated file: pokemon://models/transform/dim_move.sql
+[0m08:04:52.501360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2d361918-a0aa-46dd-b99b-0e23dbff762a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefad503d90>]}
+[0m08:04:52.514956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2d361918-a0aa-46dd-b99b-0e23dbff762a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefad095d90>]}
+[0m08:04:52.515566 [info ] [MainThread]: Found 2 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m08:04:52.516050 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2d361918-a0aa-46dd-b99b-0e23dbff762a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefb3536350>]}
+[0m08:04:52.517671 [info ] [MainThread]: 
+[0m08:04:52.518659 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m08:04:52.520185 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pokemon-403919'
+[0m08:04:52.520767 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:04:53.115894 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pokemon-403919, now list_pokemon-403919_pokemon)
+[0m08:04:53.116823 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m08:04:53.693514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2d361918-a0aa-46dd-b99b-0e23dbff762a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefad42e4d0>]}
+[0m08:04:53.694640 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m08:04:53.695182 [info ] [MainThread]: 
+[0m08:04:53.703533 [debug] [Thread-1 (]: Began running node model.pokemon.dim_move
+[0m08:04:53.704471 [info ] [Thread-1 (]: 1 of 2 START sql table model pokemon.dim_move .................................. [RUN]
+[0m08:04:53.705903 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pokemon-403919_pokemon, now model.pokemon.dim_move)
+[0m08:04:53.706865 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_move
+[0m08:04:53.718411 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_move"
+[0m08:04:53.719386 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_move (compile): 08:04:53.707451 => 08:04:53.719053
+[0m08:04:53.719971 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_move
+[0m08:04:53.736170 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m08:04:54.384874 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_move"
+[0m08:04:54.385928 [debug] [Thread-1 (]: On model.pokemon.dim_move: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_move"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_move`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH MovesData AS (
+  SELECT
+    id ,
+    JSON_EXTRACT_ARRAY(moves, '$') AS moves_array
+    FROM `pokemon-403919`.`pokemon`.`pokemon`
+), 
+move_cte AS(
+    SELECT
+    id AS pokemon_id,
+    JSON_EXTRACT_SCALAR(move, '$.move') AS move,
+    JSON_EXTRACT_SCALAR(move, '$.url') AS url,
+    JSON_EXTRACT_SCALAR(move, '$.id') AS id
+    FROM
+    MovesData,
+    UNNEST(moves_array) AS move
+)
+SELECT 
+     to_hex(md5(cast(coalesce(cast(pokemon_id as string), '_dbt_utils_surrogate_key_null_') as string))) AS dim_move_key,
+    pokemon_id,
+    move,
+    url,
+    id
+    FROM move_cte
+    );
+  
+[0m08:04:54.776765 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:f0c671f8-9de8-4bb7-b101-2c5cd54fc1a8&page=queryresults
+[0m08:04:57.109448 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_move (execute): 08:04:53.720335 => 08:04:57.108991
+[0m08:04:57.110655 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2d361918-a0aa-46dd-b99b-0e23dbff762a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefad533650>]}
+[0m08:04:57.111518 [info ] [Thread-1 (]: 1 of 2 OK created sql table model pokemon.dim_move ............................. [[32mCREATE TABLE (81.4k rows, 6.3 MiB processed)[0m in 3.41s]
+[0m08:04:57.112427 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_move
+[0m08:04:57.113377 [debug] [Thread-1 (]: Began running node model.pokemon.dim_type
+[0m08:04:57.114414 [info ] [Thread-1 (]: 2 of 2 START sql table model pokemon.dim_type .................................. [RUN]
+[0m08:04:57.115535 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.pokemon.dim_move, now model.pokemon.dim_type)
+[0m08:04:57.116070 [debug] [Thread-1 (]: Began compiling node model.pokemon.dim_type
+[0m08:04:57.253443 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.dim_type"
+[0m08:04:57.254525 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (compile): 08:04:57.116398 => 08:04:57.254165
+[0m08:04:57.255200 [debug] [Thread-1 (]: Began executing node model.pokemon.dim_type
+[0m08:04:57.258580 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m08:04:57.839807 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.dim_type"
+[0m08:04:57.841018 [debug] [Thread-1 (]: On model.pokemon.dim_type: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.dim_type"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`dim_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH type_cte AS(
+    SELECT DISTINCT
+        to_hex(md5(cast(coalesce(cast(type1 as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(type2 as string), '_dbt_utils_surrogate_key_null_') as string))) AS dim_type_key,
+        type1 AS primary_type,
+        type2 AS secondary_type
+    FROM `pokemon-403919`.`pokemon`.`pokemon`
+)
+SELECT *
+FROM type_cte
+    );
+  
+[0m08:04:58.225875 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:9a7e385b-618d-4e19-855f-641dfc87675f&page=queryresults
+[0m08:04:59.972468 [debug] [Thread-1 (]: Timing info for model.pokemon.dim_type (execute): 08:04:57.255593 => 08:04:59.972161
+[0m08:04:59.973817 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2d361918-a0aa-46dd-b99b-0e23dbff762a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefad4a0e50>]}
+[0m08:04:59.974811 [info ] [Thread-1 (]: 2 of 2 OK created sql table model pokemon.dim_type ............................. [[32mCREATE TABLE (207.0 rows, 12.1 KiB processed)[0m in 2.86s]
+[0m08:04:59.975822 [debug] [Thread-1 (]: Finished running node model.pokemon.dim_type
+[0m08:04:59.978526 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:04:59.978990 [debug] [MainThread]: Connection 'model.pokemon.dim_type' was properly closed.
+[0m08:04:59.979442 [info ] [MainThread]: 
+[0m08:04:59.979965 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 7.46 seconds (7.46s).
+[0m08:04:59.981094 [debug] [MainThread]: Command end result
+[0m08:04:59.994586 [info ] [MainThread]: 
+[0m08:04:59.995406 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m08:04:59.995993 [info ] [MainThread]: 
+[0m08:04:59.996513 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m08:04:59.997613 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 8.5670595, "process_user_time": 3.624042, "process_kernel_time": 0.410457, "process_mem_max_rss": "158584", "process_out_blocks": "3440", "process_in_blocks": "0"}
+[0m08:04:59.998284 [debug] [MainThread]: Command `dbt run` succeeded at 08:04:59.998115 after 8.57 seconds
+[0m08:04:59.998766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefaf962e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefaf3b88d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fefb44d3990>]}
+[0m08:04:59.999233 [debug] [MainThread]: Flushing usage events

@@ -9,3 +9,8 @@ RUN python -m venv poke_venv && source poke_venv/bin/activate && \
 RUN python -m venv soda_venv && source soda_venv/bin/activate && \
     pip install --no-cache-dir soda-core-bigquery==3.0.45 &&\
     pip install --no-cache-dir soda-core-scientific==3.0.45 && deactivate
+
+
+# install dbt into a virtual environment
+RUN python -m venv dbt_venv && source dbt_venv/bin/activate && \
+    pip install --no-cache-dir dbt-bigquery==1.7.1 && deactivate

@@ -19,8 +19,9 @@ async def get_pokemon_stats(session, name):
         type1 = data['types'][0]['type']['name']
         type2 = data['types'][1]['type']['name'] if len(
             data['types']) > 1 else None
-        move_data = [(move['move']['name'], move['move']['url'], move['move']['url'].rstrip(
-            '/').split('/')[-1]) for move in data['moves']]
+        move_data = [{'move': move['move']['name'], 'url': move['move']['url'],
+                      'id': move['move']['url'].rstrip('/').split('/')[-1]} for move in data['moves']]
+
         weight = data['weight']
         height = data['height']
         hp = data['stats'][0]['base_stat']

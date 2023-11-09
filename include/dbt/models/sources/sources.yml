@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: pokemon
+    database: pokemon-403919
+    
+    tables:
+      - name: pokemon
+      - name: species

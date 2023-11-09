@@ -13,3 +13,5 @@ pokemon_api
 service_account.json
 include/dataset
 configuration.yml
+dbt_packages
+target
