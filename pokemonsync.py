@@ -1,53 +1,91 @@
-import requests
+import asyncio
+import aiohttp
 import json
+import pandas as pd
+
+from include.DTO.pokemon_stats_dto import PokemonStatsDTO
+from include.DTO.pokemon_species_dto import PokemonSpeciesDTO
 
 
-def extract_pokemon_name():
-    pokemon_name = []
-    limit = 10
-    offset = 0
-    API = "https://pokeapi.co/api/v2/pokemon/" + \
-        '?limit=' + str(limit) + '&offset=' + str(offset)
-    print(API)
-
-    response = requests.get(
-        API)
-    data = json.loads(response.text)
-    for pokemon in data['results']:
-        pokemon_name.append(pokemon['name'])
-    # print(pokemon_name)
-    # return pokemon_name
-    pokemon_full = []
-    for name in pokemon_name:
-        p = get_pokemon_stats(name)
-        pokemon_full.append(p)
-
-    print(pokemon_full)
+async def fetch_data(session, url):
+    async with session.get(url) as response:
+        return await response.json()
 
 
-def get_pokemon_stats(name):
-    API = "https://pokeapi.co/api/v2/pokemon/" + \
-        name
-    response = requests.get(
-        API)
-    data = json.loads(response.text)
+async def fetch_pokemon_name(session, url):
+    data = await fetch_data(session, url)
+    return [pokemon['url'] for pokemon in data['results']]
 
-    order = data['order']
-    pokemon = data['name']
-    type1 = data['types'][0]['type']['name']
-    if len(data['types']) > 1:
-        type2 = data['types'][1]['type']['name']
-    else:
-        type2 = None
 
-    pokemonDTO = {
-        'id': order,
-        'name': pokemon,
-        'type1': type1,
-        'type2': type2
-
+async def get_pokemon_stats(session, url):
+    data = await fetch_data(session, url)
+    id = data['id']
+    name = data['name']
+    types = data['types'][0]['type']['name']
+    types2 = data['types'][1]['type']['name'] if len(
+        data['types']) > 1 else None
+    weight = data['weight']
+    height = data['height']
+    hp = data['stats'][0]['base_stat']
+    attack = data['stats'][1]['base_stat']
+    defense = data['stats'][2]['base_stat']
+    sp_atk = data['stats'][3]['base_stat']
+    sp_def = data['stats'][4]['base_stat']
+    speed = data['stats'][5]['base_stat']
+    moves = [(move['move']['name'], move['move']['url'], move['move']
+              ['url'].rstrip('/').split('/')[-1]) for move in data['moves']]
+    pokemon_stats = {
+        'id': id,
+        'name': name,
+        'types': types,
+        'types2': types2,
+        'moves': moves,
+        'weight': weight,
+        'height': height,
+        'hp': hp,
+        'attack': attack,
+        'defense': defense,
+        'sp_atk': sp_atk,
+        'sp_def': sp_def,
+        'speed': speed
     }
-    # json dump
-    return pokemonDTO
-    # print(pokemonDTO)
-    # print(json.dumps(response, indent=4))
+    return pokemon_stats
+
+
+async def get_pokemon_species(session, url):
+    data = await fetch_data(session, url)
+    return PokemonSpeciesDTO(
+        data['id'],
+        data['name'],
+        data['gender_rate'],
+        data['base_happiness'],
+        data['is_baby'],
+        data['is_legendary'],
+        data['is_mythical'],
+        data['hatch_counter'],
+        data['has_gender_differences'],
+        data['forms_switchable']
+    )
+
+
+async def pokemon_full(limit=1, offset=0, url=None, function=None):
+    async with aiohttp.ClientSession() as session:
+        pokemon_name_url = await fetch_pokemon_name(session, url)
+        tasks = [function(session, name) for name in pokemon_name_url]
+        pokemon_full = await asyncio.gather(*tasks)
+        df = pd.DataFrame(pokemon_full)
+        return df
+
+
+def main():
+    limit = 2
+    offset = 0
+    function = get_pokemon_stats
+    url = f"https://pokeapi.co/api/v2/pokemon/?limit={limit}&offset={offset}"
+    data = asyncio.run(pokemon_full(limit, offset, url, function))
+    # return data
+    data.to_csv('include/dataset/pokemon.csv', index=False)
+
+
+if __name__ == '__main__':
+    main()

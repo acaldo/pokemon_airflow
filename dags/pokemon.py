@@ -10,6 +10,7 @@ from astro.files import File
 from astro.sql.table import Table, Metadata
 from astro.constants import FileType
 
+
 @dag(
     start_date=datetime(2023, 1, 1),
     schedule=None,
@@ -21,30 +22,30 @@ def pokemon():
     @task.external_python(python='/usr/local/airflow/poke_venv/bin/python')
     def extract_pokemon_name():
         import asyncio
-        from include.extract import pokemon_full,get_pokemon_stats
-        limit = 20
+        from include.extract import pokemon_full, get_pokemon_stats
+        limit = 1100
         offset = 0
         function = get_pokemon_stats
         url = f"https://pokeapi.co/api/v2/pokemon/?limit={limit}&offset={offset}"
-        data = asyncio.run(pokemon_full(limit, offset, url,function))
-        #return data
-        data.to_csv('include/dataset/pokemon.csv',index=False)
-    
-    #extract_pokemon_name()
+        data = asyncio.run(pokemon_full(limit, offset, url, function))
+        # return data
+        data.to_csv('include/dataset/pokemon.csv', index=False)
+
+    # extract_pokemon_name()
 
     @task.external_python(python='/usr/local/airflow/poke_venv/bin/python')
     def extract_pokemon_species():
         import asyncio
-        from include.extract import pokemon_full,get_pokemon_species
-        limit = 1000
+        from include.extract import pokemon_full, get_pokemon_species
+        limit = 1
         offset = 0
         function = get_pokemon_species
         url = f"https://pokeapi.co/api/v2/pokemon/?limit={limit}&offset={offset}"
-        data = asyncio.run(pokemon_full(limit, offset, url,function))
-        #return data
-        data.to_csv('include/dataset/species.csv',index=False)
+        data = asyncio.run(pokemon_full(limit, offset, url, function))
+        # return data
+        data.to_csv('include/dataset/species.csv', index=False)
 
-    #extract_pokemon_species()
+    # extract_pokemon_species()
 
     upload_csv_to_gcs = LocalFilesystemToGCSOperator(
         task_id="upload_csv_to_gcs",
@@ -96,19 +97,19 @@ def pokemon():
         from include.soda.check_function import check
 
         return check(scan_name, checks_subpath)
-        
 
     chain(
         [
-        extract_pokemon_name(),
-        extract_pokemon_species(),
+            extract_pokemon_name(),
+            extract_pokemon_species(),
         ],
         upload_csv_to_gcs,
         create_retail_dataset,
         [gcs_to_raw,
-        gcs_to_raw1
-        ],
+         gcs_to_raw1
+         ],
         check_load()
     )
+
 
 pokemon()
