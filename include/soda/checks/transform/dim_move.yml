@@ -1,0 +1,13 @@
+checks for dim_move:
+  - schema:
+      fail:
+        when required column missing: 
+          [dim_move_key, id]
+        when wrong column type:
+          dim_move_key: string
+          pokemon_id: int
+          move: string
+          url: string
+          id: int
+  - missing_count(url) = 0:
+      name: All move have a url

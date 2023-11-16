@@ -1,0 +1,14 @@
+checks for dim_type:
+  - schema:
+      fail:
+        when required column missing: 
+          [dim_move_type, id]
+        when wrong column type:
+          dim_move_type: string
+          pokemon_id: int
+          type1: string
+          type2: string
+  - duplicate_count(type1) = 0:
+      name: All type1 are unique
+  - duplicate_count(type2) = 0:
+      name: All type2 are unique
