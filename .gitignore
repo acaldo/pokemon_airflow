@@ -11,9 +11,8 @@ airflow.cfg
 airflow.db
 pokemon_api
 service_account.json
-include/dataset
+dataset
 configuration.yml
 dbt_packages
 target
 dbt.log
-*.csv

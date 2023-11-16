@@ -120,6 +120,16 @@ def pokemon():
 
         return check(scan_name, checks_subpath)
 
+    report = DbtTaskGroup(
+        group_id='report',
+        project_config=DBT_PROJECT_CONFIG,
+        profile_config=DBT_CONFIG,
+        render_config=RenderConfig(
+            load_method=LoadMode.DBT_LS,
+            select=['path:models/report']
+        )
+    )
+
     chain(
         [
             extract_pokemon_name(),
@@ -133,7 +143,8 @@ def pokemon():
         ],
         check_load(),
         transform,
-        check_transform()
+        check_transform(),
+        report
 
     )
 
