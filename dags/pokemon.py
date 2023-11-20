@@ -48,7 +48,7 @@ def pokemon():
         function = get_pokemon_species
         url = f"https://pokeapi.co/api/v2/pokemon/?limit={limit}&offset={offset}"
         data = asyncio.run(pokemon_full(limit, offset, url, function))
-        # return data
+        data.drop_duplicates(subset=['id'], inplace=True)
         data.to_csv('include/dataset/species.csv', index=False)
 
     # extract_pokemon_species()

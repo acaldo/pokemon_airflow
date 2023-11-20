@@ -87,45 +87,14 @@ def main():
     data.to_csv('include/dataset/pokemon.csv', index=False)
 
 
+def checkstrip():
+    url = "https://pokeapi.co/api/v2/pokemon/10001"
+    uid = url.rstrip('/').split('/')[-1]
+    uid = int(uid)
+    if uid >= 10000 or uid == 1001:
+        return uid == 1
+    print(uid)
+
+
 if __name__ == '__main__':
-    main()
-
-
-async def get_pokemon_stats(session, url):
-    data = await fetch_data(session, url)
-    moves = [(move['move']['name'], move['move']['url'], move['move']
-              ['url'].rstrip('/').split('/')[-1]) for move in data['moves']]
-    pokemon_stats = PokemonStatsDTO(
-        data['id'],
-        data['name'],
-        data['types'][0]['type']['name'],
-        data['types'][1]['type']['name'] if len(data['types']) > 1 else None,
-        moves,
-        data['weight'],
-        data['height'],
-        data['stats'][0]['base_stat'],
-        data['stats'][1]['base_stat'],
-        data['stats'][2]['base_stat'],
-        data['stats'][3]['base_stat'],
-        data['stats'][4]['base_stat'],
-        data['stats'][5]['base_stat']
-    )
-    # print(pokemon_stats)
-    print(asdict(pokemon_stats))
-    return asdict(pokemon_stats)
-
-
-async def get_pokemon_species(session, url):
-    data = await fetch_data(session, url)
-    return PokemonSpeciesDTO(
-        data['id'],
-        data['name'],
-        data['gender_rate'],
-        data['base_happiness'],
-        data['is_baby'],
-        data['is_legendary'],
-        data['is_mythical'],
-        data['hatch_counter'],
-        data['has_gender_differences'],
-        data['forms_switchable']
-    )
+    checkstrip()

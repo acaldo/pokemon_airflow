@@ -51,16 +51,17 @@ async def get_pokemon_stats(session, name):
         return pokemonDTO
 
 
-""" async def get_pokemon_species(session, name):
+async def get_pokemon_species(session, name):
     uid = name.rstrip('/').split('/')[-1]
-    # transform uid to int
     uid = int(uid)
-    if uid > 10000:
-        return uid == 1
+    if uid >= 10000 or uid == 1001:
+        uid = 1
     url = f"https://pokeapi.co/api/v2/pokemon-species/{uid}"
     async with session.get(url) as response:
+        print(f'{uid} - {url}')
+
         data = await response.json()
-        speciesDTO = PokemonSpeciesDTO({
+        speciesDTO = {
             'id': data['id'],
             'name': data['name'],
             'gender_rate': data['gender_rate'],
@@ -71,8 +72,8 @@ async def get_pokemon_stats(session, name):
             'hatch_counter': data['hatch_counter'],
             'has_gender_differences': data['has_gender_differences'],
             'forms_switchable': data['forms_switchable']
-        })
-        return speciesDTO """
+        }
+        return speciesDTO
 
 
 async def pokemon_full(limit=1, offset=0, url=None, function=None):
@@ -80,7 +81,11 @@ async def pokemon_full(limit=1, offset=0, url=None, function=None):
     async with aiohttp.ClientSession() as session:
         pokemon_name = await fetch_pokemon_name(session, url)
         tasks = [function(session, name) for name in pokemon_name]
-        pokemon_full = await asyncio.gather(*tasks)
+        pokemon_full = []
+        try:
+            pokemon_full = await asyncio.gather(*tasks)
+        except Exception as e:
+            print(f"Error: {e}")
         df = pd.DataFrame(pokemon_full)
         # print(df)
         return df
