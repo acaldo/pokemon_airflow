@@ -26,7 +26,7 @@ from cosmos.config import ProjectConfig, RenderConfig
 def pokemon():
 
     @task.external_python(python='/usr/local/airflow/poke_venv/bin/python')
-    def extract_pokemon_name():
+    def extract_pokemon_stats():
         import asyncio
         from include.extract import pokemon_full, get_pokemon_stats
         limit = 1292
@@ -138,7 +138,7 @@ def pokemon():
 
     chain(
         [
-            extract_pokemon_name(),
+            extract_pokemon_stats(),
             extract_pokemon_species()
         ],
         upload_csv_to_gcs,
