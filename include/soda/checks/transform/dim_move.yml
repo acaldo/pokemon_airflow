@@ -8,6 +8,6 @@ checks for dim_move:
           pokemon_id: int
           move: string
           url: string
-          id: int
+          id: string
   - missing_count(url) = 0:
       name: All move have a url

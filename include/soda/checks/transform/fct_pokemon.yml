@@ -4,7 +4,6 @@ checks for fct_pokemon:
         when required column missing: 
           [id,name,weight,height,dim_type_key,dim_move_key]
         when wrong column type:
-          dim_move_type: string
           id: int
           name: string
           weight: int

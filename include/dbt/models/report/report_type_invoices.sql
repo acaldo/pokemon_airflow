@@ -1,9 +1,8 @@
 SELECT
-    t.type1,
-    t.type2
-    COUNT(pi.dim_move_type) AS full_type
-FROM {{ ref('fct_pokemon') }} pi
-JOIN {{ ref('dim_type') }} t on pi.dim_move_type = t.dim_move_type
-GROUP BY t.type1, t.type2
+    t.primary_type,
+    t.secondary_type,
+    COUNT(t.pokemon_id) AS full_type
+FROM {{ ref('dim_type') }} t 
+GROUP BY t.primary_type, t.secondary_type
 ORDER BY full_type DESC
 LIMIT 10

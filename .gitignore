@@ -16,3 +16,4 @@ configuration.yml
 dbt_packages
 target
 dbt.log
+logs

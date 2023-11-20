@@ -1,7 +1,5 @@
 checks for report_type_invoices:
-  - missing_count(type1) = 0:
-      name: All pokemon have a type1
-  - missing_count(type2) = 0:
-      name: All pokemon have a type2
+  - missing_count(primary_type) = 0:
+      name: All pokemon have a primary_type
   - min(full_type):
       fail: when <= 0

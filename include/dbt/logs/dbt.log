@@ -2274,3 +2274,418 @@ INNER JOIN `pokemon-403919`.`pokemon`.`pokemon` s ON pi.id = s.id
 [0m09:12:14.707453 [debug] [MainThread]: Command `dbt run` succeeded at 09:12:14.707167 after 12.20 seconds
 [0m09:12:14.708139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f69a58eae90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f69aa702b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f69a5c144d0>]}
 [0m09:12:14.708688 [debug] [MainThread]: Flushing usage events
+[0m13:13:21.587545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e48668310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e48886010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e48687ed0>]}
+
+
+============================== 13:13:21.594120 | 2ad33381-e0f2-4e76-a2b1-584bbc2f1241 ==============================
+[0m13:13:21.594120 [info ] [MainThread]: Running with dbt=1.7.1
+[0m13:13:21.594963 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'no_print': 'None', 'log_format': 'default', 'use_experimental_parser': 'False', 'invocation_command': 'dbt deps', 'version_check': 'True', 'debug': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'introspect': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt', 'partial_parse': 'True', 'indirect_selection': 'eager', 'fail_fast': 'False', 'write_json': 'True', 'quiet': 'False', 'static_parser': 'True', 'printer_width': '80'}
+[0m13:13:21.696436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2ad33381-e0f2-4e76-a2b1-584bbc2f1241', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e486a1710>]}
+[0m13:13:21.727031 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-j0mj2z6k'
+[0m13:13:21.727659 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m13:13:21.829449 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m13:13:21.832181 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m13:13:21.917681 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m13:13:21.924448 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m13:13:22.381689 [info ] [MainThread]: Installed from version 1.1.1
+[0m13:13:22.382268 [info ] [MainThread]: Up to date!
+[0m13:13:22.382820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '2ad33381-e0f2-4e76-a2b1-584bbc2f1241', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e48caeb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e48c122d0>]}
+[0m13:13:22.384075 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.84154516, "process_user_time": 2.239528, "process_kernel_time": 0.413606, "process_mem_max_rss": "114524", "process_in_blocks": "66792", "process_out_blocks": "2224"}
+[0m13:13:22.384783 [debug] [MainThread]: Command `dbt deps` succeeded at 13:13:22.384534 after 0.84 seconds
+[0m13:13:22.385270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e48a12bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e4d7cf8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e48957cd0>]}
+[0m13:13:22.385768 [debug] [MainThread]: Flushing usage events
+[0m13:14:17.542667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f441e8a9e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f441eab9510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f441ebd7e10>]}
+
+
+============================== 13:14:17.547652 | f7e68531-0c55-468f-a6d1-067f1fd2c54a ==============================
+[0m13:14:17.547652 [info ] [MainThread]: Running with dbt=1.7.1
+[0m13:14:17.548393 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'printer_width': '80', 'log_path': '/usr/local/airflow/include/dbt/logs', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'cache_selected_only': 'False', 'debug': 'False', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'no_print': 'None', 'warn_error': 'None', 'fail_fast': 'False', 'write_json': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run --select path:models/report --profiles-dir /usr/local/airflow/include/dbt/', 'log_format': 'default', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'quiet': 'False', 'target_path': 'None', 'use_experimental_parser': 'False'}
+[0m13:14:18.355231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f7e68531-0c55-468f-a6d1-067f1fd2c54a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f441c8b76d0>]}
+[0m13:14:18.447810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f7e68531-0c55-468f-a6d1-067f1fd2c54a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f441e69ca90>]}
+[0m13:14:18.450563 [info ] [MainThread]: Registered adapter: bigquery=1.7.1
+[0m13:14:18.467774 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m13:14:18.552605 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m13:14:18.553340 [debug] [MainThread]: Partial parsing: added file: pokemon://models/report/report_type_invoices.sql
+[0m13:14:18.553860 [debug] [MainThread]: Partial parsing: updated file: pokemon://models/transform/fct_pokemon.sql
+[0m13:14:18.753153 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f7e68531-0c55-468f-a6d1-067f1fd2c54a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f441c7f7a90>]}
+[0m13:14:18.768413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f7e68531-0c55-468f-a6d1-067f1fd2c54a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f441c720d90>]}
+[0m13:14:18.769068 [info ] [MainThread]: Found 4 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m13:14:18.769545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f7e68531-0c55-468f-a6d1-067f1fd2c54a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f441c7ae110>]}
+[0m13:14:18.771182 [info ] [MainThread]: 
+[0m13:14:18.772204 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:14:18.773728 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pokemon-403919'
+[0m13:14:18.774404 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:14:19.563257 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pokemon-403919, now list_pokemon-403919_pokemon)
+[0m13:14:19.563997 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:14:20.137332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f7e68531-0c55-468f-a6d1-067f1fd2c54a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f441c4f51d0>]}
+[0m13:14:20.138341 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:14:20.138861 [info ] [MainThread]: 
+[0m13:14:20.146554 [debug] [Thread-1 (]: Began running node model.pokemon.report_type_invoices
+[0m13:14:20.147391 [info ] [Thread-1 (]: 1 of 1 START sql table model pokemon.report_type_invoices ...................... [RUN]
+[0m13:14:20.148514 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pokemon-403919_pokemon, now model.pokemon.report_type_invoices)
+[0m13:14:20.149184 [debug] [Thread-1 (]: Began compiling node model.pokemon.report_type_invoices
+[0m13:14:20.158686 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.report_type_invoices"
+[0m13:14:20.160293 [debug] [Thread-1 (]: Timing info for model.pokemon.report_type_invoices (compile): 13:14:20.149578 => 13:14:20.159830
+[0m13:14:20.161188 [debug] [Thread-1 (]: Began executing node model.pokemon.report_type_invoices
+[0m13:14:20.204449 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.report_type_invoices"
+[0m13:14:20.205552 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:14:20.207335 [debug] [Thread-1 (]: On model.pokemon.report_type_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.report_type_invoices"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`report_type_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT
+    t.type1,
+    t.type2
+    COUNT(pi.dim_type_key) AS full_type
+FROM `pokemon-403919`.`pokemon`.`fct_pokemon` pi
+JOIN `pokemon-403919`.`pokemon`.`dim_type` t on pi.dim_type_key = t.dim_type_key
+GROUP BY t.type1, t.type2
+ORDER BY full_type DESC
+LIMIT 10
+    );
+  
+[0m13:14:20.820257 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:ced0dde6-0ec5-4bde-ac28-da32e34fd95f&page=queryresults
+[0m13:14:20.823724 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected ")" but got "(" at [16:10]')
+[0m13:14:21.520925 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:476ec724-43a6-4fd7-9317-5dbcc614643f&page=queryresults
+[0m13:14:21.523110 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:476ec724-43a6-4fd7-9317-5dbcc614643f&page=queryresults
+[0m13:14:21.524917 [debug] [Thread-1 (]: Timing info for model.pokemon.report_type_invoices (execute): 13:14:20.161697 => 13:14:21.524348
+[0m13:14:21.543174 [debug] [Thread-1 (]: Database Error in model report_type_invoices (models/report/report_type_invoices.sql)
+  Syntax error: Expected ")" but got "(" at [16:10]
+  compiled Code at target/run/pokemon/models/report/report_type_invoices.sql
+[0m13:14:21.544038 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f7e68531-0c55-468f-a6d1-067f1fd2c54a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f441c5802d0>]}
+[0m13:14:21.545058 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model pokemon.report_type_invoices ............. [[31mERROR[0m in 1.40s]
+[0m13:14:21.546152 [debug] [Thread-1 (]: Finished running node model.pokemon.report_type_invoices
+[0m13:14:21.548766 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:14:21.549202 [debug] [MainThread]: Connection 'model.pokemon.report_type_invoices' was properly closed.
+[0m13:14:21.549636 [info ] [MainThread]: 
+[0m13:14:21.550294 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 2.78 seconds (2.78s).
+[0m13:14:21.551269 [debug] [MainThread]: Command end result
+[0m13:14:21.678561 [info ] [MainThread]: 
+[0m13:14:21.679494 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m13:14:21.680365 [info ] [MainThread]: 
+[0m13:14:21.681130 [error] [MainThread]:   Database Error in model report_type_invoices (models/report/report_type_invoices.sql)
+  Syntax error: Expected ")" but got "(" at [16:10]
+  compiled Code at target/run/pokemon/models/report/report_type_invoices.sql
+[0m13:14:21.681709 [info ] [MainThread]: 
+[0m13:14:21.682349 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m13:14:21.683434 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 4.185351, "process_user_time": 3.570669, "process_kernel_time": 0.230043, "process_mem_max_rss": "159740", "process_in_blocks": "26200", "process_out_blocks": "3472", "command_success": false}
+[0m13:14:21.684183 [debug] [MainThread]: Command `dbt run` failed at 13:14:21.683992 after 4.19 seconds
+[0m13:14:21.684787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f441e8cb010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f441e8cb4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f441e8caa50>]}
+[0m13:14:21.685284 [debug] [MainThread]: Flushing usage events
+[0m13:15:47.024805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac18af4f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac190c4a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac19161a50>]}
+
+
+============================== 13:15:47.030314 | 8bf49d4b-ba18-4af6-9d15-3b6c453b5a56 ==============================
+[0m13:15:47.030314 [info ] [MainThread]: Running with dbt=1.7.1
+[0m13:15:47.031088 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'log_cache_events': 'False', 'version_check': 'True', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'partial_parse': 'True', 'debug': 'False', 'quiet': 'False', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select path:models/report --profiles-dir /usr/local/airflow/include/dbt/', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_path': '/usr/local/airflow/include/dbt/logs', 'static_parser': 'True', 'fail_fast': 'False', 'write_json': 'True', 'printer_width': '80', 'target_path': 'None', 'warn_error': 'None', 'no_print': 'None', 'use_experimental_parser': 'False'}
+[0m13:15:47.605310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8bf49d4b-ba18-4af6-9d15-3b6c453b5a56', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac16eef650>]}
+[0m13:15:47.712846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8bf49d4b-ba18-4af6-9d15-3b6c453b5a56', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac16c7ae90>]}
+[0m13:15:47.713988 [info ] [MainThread]: Registered adapter: bigquery=1.7.1
+[0m13:15:47.732096 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m13:15:47.767445 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:15:47.768253 [debug] [MainThread]: Partial parsing: updated file: pokemon://models/report/report_type_invoices.sql
+[0m13:15:47.916835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8bf49d4b-ba18-4af6-9d15-3b6c453b5a56', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac16afb310>]}
+[0m13:15:47.931318 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8bf49d4b-ba18-4af6-9d15-3b6c453b5a56', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac16bdf910>]}
+[0m13:15:47.931943 [info ] [MainThread]: Found 4 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m13:15:47.932439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8bf49d4b-ba18-4af6-9d15-3b6c453b5a56', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac16dda150>]}
+[0m13:15:47.934063 [info ] [MainThread]: 
+[0m13:15:47.935079 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:15:47.936431 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pokemon-403919'
+[0m13:15:47.937016 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:15:48.666964 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pokemon-403919, now list_pokemon-403919_pokemon)
+[0m13:15:48.669730 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:15:49.302396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8bf49d4b-ba18-4af6-9d15-3b6c453b5a56', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac16ac6c10>]}
+[0m13:15:49.305135 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:15:49.306607 [info ] [MainThread]: 
+[0m13:15:49.323897 [debug] [Thread-1 (]: Began running node model.pokemon.report_type_invoices
+[0m13:15:49.325307 [info ] [Thread-1 (]: 1 of 1 START sql table model pokemon.report_type_invoices ...................... [RUN]
+[0m13:15:49.327312 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pokemon-403919_pokemon, now model.pokemon.report_type_invoices)
+[0m13:15:49.328325 [debug] [Thread-1 (]: Began compiling node model.pokemon.report_type_invoices
+[0m13:15:49.340579 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.report_type_invoices"
+[0m13:15:49.341826 [debug] [Thread-1 (]: Timing info for model.pokemon.report_type_invoices (compile): 13:15:49.329020 => 13:15:49.341337
+[0m13:15:49.342584 [debug] [Thread-1 (]: Began executing node model.pokemon.report_type_invoices
+[0m13:15:49.389238 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.report_type_invoices"
+[0m13:15:49.390125 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:15:49.391886 [debug] [Thread-1 (]: On model.pokemon.report_type_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.report_type_invoices"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`report_type_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT
+    t.primary_type,
+    t.secondary_type,
+    COUNT(pi.dim_type_key) AS full_type
+FROM `pokemon-403919`.`pokemon`.`dim_type` pi 
+JOIN `pokemon-403919`.`pokemon`.`fct_pokemon` t on pi.dim_type_key = t.dim_type_key
+GROUP BY t.primary_type, t.secondary_type
+ORDER BY full_type DESC
+LIMIT 10
+    );
+  
+[0m13:15:50.230145 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:5b19e485-0956-4f78-91b8-2913049a7330&page=queryresults
+[0m13:15:50.690629 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Name primary_type not found inside t at [14:7]')
+[0m13:15:52.068674 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:6b982494-3214-4891-91c8-ede4c283518e&page=queryresults
+[0m13:15:52.494186 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:6b982494-3214-4891-91c8-ede4c283518e&page=queryresults
+[0m13:15:52.495588 [debug] [Thread-1 (]: Timing info for model.pokemon.report_type_invoices (execute): 13:15:49.344702 => 13:15:52.495166
+[0m13:15:52.501036 [debug] [Thread-1 (]: Database Error in model report_type_invoices (models/report/report_type_invoices.sql)
+  Name primary_type not found inside t at [14:7]
+  compiled Code at target/run/pokemon/models/report/report_type_invoices.sql
+[0m13:15:52.501766 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8bf49d4b-ba18-4af6-9d15-3b6c453b5a56', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac169dd710>]}
+[0m13:15:52.502641 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model pokemon.report_type_invoices ............. [[31mERROR[0m in 3.18s]
+[0m13:15:52.503629 [debug] [Thread-1 (]: Finished running node model.pokemon.report_type_invoices
+[0m13:15:52.506593 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:15:52.507060 [debug] [MainThread]: Connection 'model.pokemon.report_type_invoices' was properly closed.
+[0m13:15:52.507488 [info ] [MainThread]: 
+[0m13:15:52.508018 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.57 seconds (4.57s).
+[0m13:15:52.508946 [debug] [MainThread]: Command end result
+[0m13:15:52.634735 [info ] [MainThread]: 
+[0m13:15:52.635390 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m13:15:52.635880 [info ] [MainThread]: 
+[0m13:15:52.636365 [error] [MainThread]:   Database Error in model report_type_invoices (models/report/report_type_invoices.sql)
+  Name primary_type not found inside t at [14:7]
+  compiled Code at target/run/pokemon/models/report/report_type_invoices.sql
+[0m13:15:52.636835 [info ] [MainThread]: 
+[0m13:15:52.637401 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m13:15:52.640122 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 5.6582055, "process_user_time": 3.403957, "process_kernel_time": 0.220256, "process_mem_max_rss": "157972", "process_out_blocks": "3464", "command_success": false, "process_in_blocks": "0"}
+[0m13:15:52.641181 [debug] [MainThread]: Command `dbt run` failed at 13:15:52.640965 after 5.66 seconds
+[0m13:15:52.642120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac1a3a2510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac18deab90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac1dc83990>]}
+[0m13:15:52.643876 [debug] [MainThread]: Flushing usage events
+[0m13:16:15.720804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8c961a1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8c69d7250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8c6616290>]}
+
+
+============================== 13:16:15.725700 | 633439d5-7c3c-43dd-acae-3708ea907f40 ==============================
+[0m13:16:15.725700 [info ] [MainThread]: Running with dbt=1.7.1
+[0m13:16:15.726562 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/usr/local/airflow/include/dbt/', 'printer_width': '80', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'static_parser': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'invocation_command': 'dbt run --select path:models/report --profiles-dir /usr/local/airflow/include/dbt/', 'partial_parse': 'True', 'quiet': 'False', 'fail_fast': 'False', 'target_path': 'None', 'no_print': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'debug': 'False', 'log_format': 'default', 'cache_selected_only': 'False', 'version_check': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])'}
+[0m13:16:16.328039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '633439d5-7c3c-43dd-acae-3708ea907f40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8c6254d10>]}
+[0m13:16:16.431835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '633439d5-7c3c-43dd-acae-3708ea907f40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8c6284050>]}
+[0m13:16:16.432748 [info ] [MainThread]: Registered adapter: bigquery=1.7.1
+[0m13:16:16.448958 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m13:16:16.486106 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:16:16.486868 [debug] [MainThread]: Partial parsing: updated file: pokemon://models/report/report_type_invoices.sql
+[0m13:16:16.641315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '633439d5-7c3c-43dd-acae-3708ea907f40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8c440ddd0>]}
+[0m13:16:16.656166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '633439d5-7c3c-43dd-acae-3708ea907f40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8c432c210>]}
+[0m13:16:16.656822 [info ] [MainThread]: Found 4 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m13:16:16.657325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '633439d5-7c3c-43dd-acae-3708ea907f40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8c4219610>]}
+[0m13:16:16.658854 [info ] [MainThread]: 
+[0m13:16:16.659939 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:16:16.661619 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pokemon-403919'
+[0m13:16:16.662315 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:16:17.353489 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pokemon-403919, now list_pokemon-403919_pokemon)
+[0m13:16:17.354141 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:16:17.930039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '633439d5-7c3c-43dd-acae-3708ea907f40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8c42734d0>]}
+[0m13:16:17.931046 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:16:17.931545 [info ] [MainThread]: 
+[0m13:16:17.938721 [debug] [Thread-1 (]: Began running node model.pokemon.report_type_invoices
+[0m13:16:17.939466 [info ] [Thread-1 (]: 1 of 1 START sql table model pokemon.report_type_invoices ...................... [RUN]
+[0m13:16:17.940910 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pokemon-403919_pokemon, now model.pokemon.report_type_invoices)
+[0m13:16:17.941586 [debug] [Thread-1 (]: Began compiling node model.pokemon.report_type_invoices
+[0m13:16:17.951537 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.report_type_invoices"
+[0m13:16:17.952483 [debug] [Thread-1 (]: Timing info for model.pokemon.report_type_invoices (compile): 13:16:17.942022 => 13:16:17.952187
+[0m13:16:17.953021 [debug] [Thread-1 (]: Began executing node model.pokemon.report_type_invoices
+[0m13:16:17.998927 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.report_type_invoices"
+[0m13:16:17.999807 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:16:18.001618 [debug] [Thread-1 (]: On model.pokemon.report_type_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.report_type_invoices"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`report_type_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT
+    t.primary_type,
+    t.secondary_type,
+    COUNT(pi.dim_type_key) AS full_type
+FROM `pokemon-403919`.`pokemon`.`dim_type` t 
+JOIN `pokemon-403919`.`pokemon`.`fct_pokemon` pi on pi.dim_type_key = t.dim_type_key
+GROUP BY t.primary_type, t.secondary_type
+ORDER BY full_type DESC
+LIMIT 10
+    );
+  
+[0m13:16:18.717563 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:6fd4acf6-9001-43f5-a859-a418591bb722&page=queryresults
+[0m13:16:20.874681 [debug] [Thread-1 (]: Timing info for model.pokemon.report_type_invoices (execute): 13:16:17.953350 => 13:16:20.874348
+[0m13:16:20.875770 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '633439d5-7c3c-43dd-acae-3708ea907f40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8c4273690>]}
+[0m13:16:20.876674 [info ] [Thread-1 (]: 1 of 1 OK created sql table model pokemon.report_type_invoices ................. [[32mCREATE TABLE (10.0 rows, 85.2 KiB processed)[0m in 2.94s]
+[0m13:16:20.877646 [debug] [Thread-1 (]: Finished running node model.pokemon.report_type_invoices
+[0m13:16:20.880142 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:16:20.880604 [debug] [MainThread]: Connection 'model.pokemon.report_type_invoices' was properly closed.
+[0m13:16:20.881044 [info ] [MainThread]: 
+[0m13:16:20.881577 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.22 seconds (4.22s).
+[0m13:16:20.882475 [debug] [MainThread]: Command end result
+[0m13:16:21.006352 [info ] [MainThread]: 
+[0m13:16:21.007098 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:16:21.007620 [info ] [MainThread]: 
+[0m13:16:21.008441 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m13:16:21.009972 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.335901, "process_user_time": 3.480305, "process_kernel_time": 0.130386, "process_mem_max_rss": "157576", "process_out_blocks": "3464", "process_in_blocks": "0"}
+[0m13:16:21.010792 [debug] [MainThread]: Command `dbt run` succeeded at 13:16:21.010597 after 5.34 seconds
+[0m13:16:21.011403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8c66befd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8c68e9f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8cb3cf990>]}
+[0m13:16:21.011974 [debug] [MainThread]: Flushing usage events
+[0m13:21:35.004759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0cc0ef2390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0cc0ef08d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0cc0b90110>]}
+
+
+============================== 13:21:35.009402 | d264f793-2627-41ff-b01f-d6ba5365173f ==============================
+[0m13:21:35.009402 [info ] [MainThread]: Running with dbt=1.7.1
+[0m13:21:35.010293 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/usr/local/airflow/include/dbt/', 'log_format': 'default', 'fail_fast': 'False', 'static_parser': 'True', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'printer_width': '80', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --select path:models/report --profiles-dir /usr/local/airflow/include/dbt/', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'write_json': 'True', 'indirect_selection': 'eager', 'debug': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'quiet': 'False', 'introspect': 'True'}
+[0m13:21:35.648261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd264f793-2627-41ff-b01f-d6ba5365173f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0cbeaeb6d0>]}
+[0m13:21:35.749892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd264f793-2627-41ff-b01f-d6ba5365173f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0cc08c05d0>]}
+[0m13:21:35.751282 [info ] [MainThread]: Registered adapter: bigquery=1.7.1
+[0m13:21:35.776354 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m13:21:35.820337 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:21:35.821312 [debug] [MainThread]: Partial parsing: updated file: pokemon://models/report/report_type_invoices.sql
+[0m13:21:35.985097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd264f793-2627-41ff-b01f-d6ba5365173f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0cbea01e10>]}
+[0m13:21:35.999005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd264f793-2627-41ff-b01f-d6ba5365173f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0cbeae4d90>]}
+[0m13:21:35.999615 [info ] [MainThread]: Found 4 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m13:21:36.000101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd264f793-2627-41ff-b01f-d6ba5365173f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0cbe702110>]}
+[0m13:21:36.001886 [info ] [MainThread]: 
+[0m13:21:36.002984 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:21:36.004376 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pokemon-403919'
+[0m13:21:36.005056 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:21:36.769127 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pokemon-403919, now list_pokemon-403919_pokemon)
+[0m13:21:36.769901 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:21:37.346575 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd264f793-2627-41ff-b01f-d6ba5365173f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0cbe7926d0>]}
+[0m13:21:37.347605 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:21:37.348117 [info ] [MainThread]: 
+[0m13:21:37.355755 [debug] [Thread-1 (]: Began running node model.pokemon.report_type_invoices
+[0m13:21:37.356670 [info ] [Thread-1 (]: 1 of 1 START sql table model pokemon.report_type_invoices ...................... [RUN]
+[0m13:21:37.357882 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pokemon-403919_pokemon, now model.pokemon.report_type_invoices)
+[0m13:21:37.358654 [debug] [Thread-1 (]: Began compiling node model.pokemon.report_type_invoices
+[0m13:21:37.368631 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.report_type_invoices"
+[0m13:21:37.369562 [debug] [Thread-1 (]: Timing info for model.pokemon.report_type_invoices (compile): 13:21:37.359182 => 13:21:37.369264
+[0m13:21:37.370090 [debug] [Thread-1 (]: Began executing node model.pokemon.report_type_invoices
+[0m13:21:37.386040 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:21:38.046130 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.report_type_invoices"
+[0m13:21:38.047035 [debug] [Thread-1 (]: On model.pokemon.report_type_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.report_type_invoices"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`report_type_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT
+    t.primary_type,
+    t.secondary_type,
+    COUNT(pi.dim_type_key) AS full_type
+FROM `pokemon-403919`.`pokemon`.`dim_type` t 
+INNER JOIN `pokemon-403919`.`pokemon`.`fct_pokemon` pi on pi.dim_type_key = t.dim_type_key
+GROUP BY t.primary_type, t.secondary_type
+ORDER BY full_type DESC
+LIMIT 10
+    );
+  
+[0m13:21:38.478698 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:be9e5056-99c6-4a66-b3c0-00d752b15131&page=queryresults
+[0m13:21:40.519680 [debug] [Thread-1 (]: Timing info for model.pokemon.report_type_invoices (execute): 13:21:37.370427 => 13:21:40.519332
+[0m13:21:40.520909 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd264f793-2627-41ff-b01f-d6ba5365173f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0cbe923710>]}
+[0m13:21:40.521851 [info ] [Thread-1 (]: 1 of 1 OK created sql table model pokemon.report_type_invoices ................. [[32mCREATE TABLE (10.0 rows, 85.2 KiB processed)[0m in 3.16s]
+[0m13:21:40.522943 [debug] [Thread-1 (]: Finished running node model.pokemon.report_type_invoices
+[0m13:21:40.525915 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:21:40.526502 [debug] [MainThread]: Connection 'model.pokemon.report_type_invoices' was properly closed.
+[0m13:21:40.527098 [info ] [MainThread]: 
+[0m13:21:40.527703 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.52 seconds (4.52s).
+[0m13:21:40.529133 [debug] [MainThread]: Command end result
+[0m13:21:40.686798 [info ] [MainThread]: 
+[0m13:21:40.687533 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:21:40.688042 [info ] [MainThread]: 
+[0m13:21:40.688590 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m13:21:40.689856 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.730536, "process_user_time": 3.471809, "process_kernel_time": 0.282589, "process_mem_max_rss": "158244", "process_out_blocks": "3464", "process_in_blocks": "0"}
+[0m13:21:40.690590 [debug] [MainThread]: Command `dbt run` succeeded at 13:21:40.690407 after 5.73 seconds
+[0m13:21:40.691097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0cc0b0a6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0cc0dfeed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0cc59aba50>]}
+[0m13:21:40.691602 [debug] [MainThread]: Flushing usage events
+[0m13:23:33.284680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbdf0bc750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbdeb17ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbdec90410>]}
+
+
+============================== 13:23:33.289491 | 8545e923-edb4-4588-a1c5-5904f9aa3469 ==============================
+[0m13:23:33.289491 [info ] [MainThread]: Running with dbt=1.7.1
+[0m13:23:33.290248 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'cache_selected_only': 'False', 'invocation_command': 'dbt run --select path:models/report --profiles-dir /usr/local/airflow/include/dbt/', 'target_path': 'None', 'debug': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'log_format': 'default', 'log_path': '/usr/local/airflow/include/dbt/logs', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'version_check': 'True', 'no_print': 'None', 'use_experimental_parser': 'False', 'write_json': 'True', 'introspect': 'True', 'quiet': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'log_cache_events': 'False', 'static_parser': 'True', 'printer_width': '80', 'warn_error': 'None', 'indirect_selection': 'eager'}
+[0m13:23:33.913935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8545e923-edb4-4588-a1c5-5904f9aa3469', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbdcbceb50>]}
+[0m13:23:34.028541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8545e923-edb4-4588-a1c5-5904f9aa3469', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbde7f4710>]}
+[0m13:23:34.029614 [info ] [MainThread]: Registered adapter: bigquery=1.7.1
+[0m13:23:34.060596 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m13:23:34.100663 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:23:34.101646 [debug] [MainThread]: Partial parsing: updated file: pokemon://models/report/report_type_invoices.sql
+[0m13:23:34.267336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8545e923-edb4-4588-a1c5-5904f9aa3469', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbdc804ed0>]}
+[0m13:23:34.281465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8545e923-edb4-4588-a1c5-5904f9aa3469', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbdc8dda50>]}
+[0m13:23:34.282237 [info ] [MainThread]: Found 4 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m13:23:34.282834 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8545e923-edb4-4588-a1c5-5904f9aa3469', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbdc834e90>]}
+[0m13:23:34.284718 [info ] [MainThread]: 
+[0m13:23:34.285957 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:23:34.287503 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_pokemon-403919'
+[0m13:23:34.288248 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:23:35.008625 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_pokemon-403919, now list_pokemon-403919_pokemon)
+[0m13:23:35.009314 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:23:35.603398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8545e923-edb4-4588-a1c5-5904f9aa3469', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbdc9dd710>]}
+[0m13:23:35.604552 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:23:35.605118 [info ] [MainThread]: 
+[0m13:23:35.613209 [debug] [Thread-1 (]: Began running node model.pokemon.report_type_invoices
+[0m13:23:35.614414 [info ] [Thread-1 (]: 1 of 1 START sql table model pokemon.report_type_invoices ...................... [RUN]
+[0m13:23:35.615778 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_pokemon-403919_pokemon, now model.pokemon.report_type_invoices)
+[0m13:23:35.616434 [debug] [Thread-1 (]: Began compiling node model.pokemon.report_type_invoices
+[0m13:23:35.625759 [debug] [Thread-1 (]: Writing injected SQL for node "model.pokemon.report_type_invoices"
+[0m13:23:35.626671 [debug] [Thread-1 (]: Timing info for model.pokemon.report_type_invoices (compile): 13:23:35.616790 => 13:23:35.626380
+[0m13:23:35.627187 [debug] [Thread-1 (]: Began executing node model.pokemon.report_type_invoices
+[0m13:23:35.643464 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:23:36.289227 [debug] [Thread-1 (]: Writing runtime sql for node "model.pokemon.report_type_invoices"
+[0m13:23:36.290090 [debug] [Thread-1 (]: On model.pokemon.report_type_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "pokemon", "target_name": "dev", "node_id": "model.pokemon.report_type_invoices"} */
+
+  
+    
+
+    create or replace table `pokemon-403919`.`pokemon`.`report_type_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT
+    t.primary_type,
+    t.secondary_type,
+    COUNT(t.pokemon_id) AS full_type
+FROM `pokemon-403919`.`pokemon`.`dim_type` t 
+GROUP BY t.primary_type, t.secondary_type
+ORDER BY full_type DESC
+LIMIT 10
+    );
+  
+[0m13:23:36.700990 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=pokemon-403919&j=bq:us-east1:adc7ffb2-02bb-4f4b-99bd-717c5406c485&page=queryresults
+[0m13:23:38.481464 [debug] [Thread-1 (]: Timing info for model.pokemon.report_type_invoices (execute): 13:23:35.627502 => 13:23:38.481136
+[0m13:23:38.482939 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8545e923-edb4-4588-a1c5-5904f9aa3469', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbdc8a4410>]}
+[0m13:23:38.484048 [info ] [Thread-1 (]: 1 of 1 OK created sql table model pokemon.report_type_invoices ................. [[32mCREATE TABLE (10.0 rows, 20.7 KiB processed)[0m in 2.87s]
+[0m13:23:38.485197 [debug] [Thread-1 (]: Finished running node model.pokemon.report_type_invoices
+[0m13:23:38.488024 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:23:38.488543 [debug] [MainThread]: Connection 'model.pokemon.report_type_invoices' was properly closed.
+[0m13:23:38.489060 [info ] [MainThread]: 
+[0m13:23:38.489624 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.20 seconds (4.20s).
+[0m13:23:38.490783 [debug] [MainThread]: Command end result
+[0m13:23:38.637561 [info ] [MainThread]: 
+[0m13:23:38.638222 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:23:38.638842 [info ] [MainThread]: 
+[0m13:23:38.639483 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m13:23:38.640609 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.400625, "process_user_time": 3.653387, "process_kernel_time": 0.330306, "process_mem_max_rss": "159788", "process_out_blocks": "3464", "process_in_blocks": "0"}
+[0m13:23:38.641287 [debug] [MainThread]: Command `dbt run` succeeded at 13:23:38.641114 after 5.40 seconds
+[0m13:23:38.641774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbdee3a850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbdee02a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbe3ad7b10>]}
+[0m13:23:38.642309 [debug] [MainThread]: Flushing usage events
